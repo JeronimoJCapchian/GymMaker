@@ -12,4 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ee052f0aa37bc249ab016f0eb213ff7, type: 3}
   m_Name: Database
   m_EditorClassIdentifier: 
-  objects: []
+  objects:
+  - <Name>k__BackingField: Mancuernero
+    <ID>k__BackingField: 0
+    <Size>k__BackingField: {x: 1, y: 2}
+    <Prefab>k__BackingField: {fileID: 7371343580872914121, guid: 0499f06eb8ce76440b58cce945f27877, type: 3}

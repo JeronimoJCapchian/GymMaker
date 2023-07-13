@@ -14,14 +14,14 @@ public class PlacementManager : MonoBehaviour
     // Si es -1 no se selecciono ningún objeto
     int selectedObjectIndex = -1;
 
-    [SerializeField] GameObject gridVisualization;
+    //[SerializeField] GameObject gridVisualization;
 
     private void Start()
     {
         StopPlacement();
     }
 
-    void StartPlacement(int ID)
+    public void StartPlacement(int ID)
     {
         StopPlacement();
         selectedObjectIndex = dataBase.objects.FindIndex(data => data.ID == ID);
@@ -30,7 +30,7 @@ public class PlacementManager : MonoBehaviour
             Debug.LogError($"No ID Found{ID}");
             return;
         }
-        gridVisualization.SetActive(true);
+        //gridVisualization.SetActive(true);
         cellIndicator.SetActive(true);
         inputManager.OnClicked += PlaceStructure;
         inputManager.OnExit += StopPlacement;
@@ -50,7 +50,7 @@ public class PlacementManager : MonoBehaviour
     void StopPlacement()
     {
         selectedObjectIndex = -1;
-        gridVisualization.SetActive(false);
+        //gridVisualization.SetActive(false);
         cellIndicator.SetActive(false);
         inputManager.OnClicked -= PlaceStructure;
         inputManager.OnExit -= StopPlacement;
