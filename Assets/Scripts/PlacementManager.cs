@@ -21,13 +21,14 @@ public class PlacementManager : MonoBehaviour
         StopPlacement();
     }
 
+    // Activa la colocación de un objeto según la id que se le pase
     public void StartPlacement(int ID)
     {
         StopPlacement();
-        selectedObjectIndex = dataBase.objects.FindIndex(data => data.ID == ID);
+        selectedObjectIndex = dataBase.machines.FindIndex(data => data.ID == ID);
         if (selectedObjectIndex < 0)
         {
-            Debug.LogError($"No ID Found{ID}");
+            Debug.LogWarning($"No ID Found{ID}");
             return;
         }
         //gridVisualization.SetActive(true);
@@ -36,6 +37,7 @@ public class PlacementManager : MonoBehaviour
         inputManager.OnExit += StopPlacement;
     }
 
+    // Coloca el objeto en la posición del Mapa
     private void PlaceStructure()
     {
         if (inputManager.IsPointerOverUI())
@@ -43,10 +45,11 @@ public class PlacementManager : MonoBehaviour
 
         Vector3 mousePosition = inputManager.GetSelectedMapPosition();
         Vector3Int gridPosition = grid.WorldToCell(mousePosition);
-        GameObject newObject = Instantiate(dataBase.objects[selectedObjectIndex].Prefab);
+        GameObject newObject = Instantiate(dataBase.machines[selectedObjectIndex].Prefab);
         newObject.transform.position = grid.CellToWorld(gridPosition);
     }
 
+    // Apaga la colocación
     void StopPlacement()
     {
         selectedObjectIndex = -1;
@@ -56,7 +59,8 @@ public class PlacementManager : MonoBehaviour
         inputManager.OnExit -= StopPlacement;
     }
 
-    void Update()
+    /// <summary>Obtiene la posición del mouse al activar el modo de colocación</summary>
+    public void ObtainMouseVariables()
     {
         if (selectedObjectIndex < 0)
             return;
@@ -67,4 +71,5 @@ public class PlacementManager : MonoBehaviour
         mouseIndicator.transform.position = mousePosition;
         cellIndicator.transform.position = grid.CellToWorld(gridPosition);
     }
+
 }

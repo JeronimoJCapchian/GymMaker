@@ -3,14 +3,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu]
+[CreateAssetMenu(menuName = "GymMaker/GeneralDataBase")]
 public class ObjectDatabase : ScriptableObject
 {
-    public List<Object> objects;
+    public List<Machine> machines;
 }
 
 [Serializable]
-public class Object
+public class Machine
 {
     [field: SerializeField]
     public string Name { get; private set; }
@@ -18,6 +18,8 @@ public class Object
     public int ID { get; private set; }
     [field: SerializeField]
     public Vector2Int Size { get; private set; } = Vector2Int.one;
+    [field: SerializeField]
+    public Sprite Icon { get; private set; }
     [field: SerializeField]
     public GameObject Prefab { get; private set; }
 }

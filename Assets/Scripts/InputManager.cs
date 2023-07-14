@@ -7,14 +7,13 @@ using UnityEngine.EventSystems;
 public class InputManager : MonoBehaviour
 {
     [SerializeField] Camera sceneCamera;
-
+    [SerializeField] LayerMask placementLayerMask;
     Vector3 lastPosition;
 
-    [SerializeField] LayerMask placementLayerMask;
-
+    
     public event Action OnClicked, OnExit;
 
-    private void Update()
+    public void HandleAction()
     {
         if (Input.GetMouseButtonDown(0))
             OnClicked?.Invoke();
@@ -22,9 +21,11 @@ public class InputManager : MonoBehaviour
             OnExit?.Invoke();
     }
 
+    /// <summary>Devuelve si el cursor esta sobre la interfaz</summary>
     public bool IsPointerOverUI()
         => EventSystem.current.IsPointerOverGameObject();
 
+    /// <summary>Obtiene la posición del mapa en según la posición del mouse cuando se ejecute</summary>
     public Vector3 GetSelectedMapPosition()
     {
         Vector3 mousePos = Input.mousePosition;
@@ -37,4 +38,5 @@ public class InputManager : MonoBehaviour
         }
         return lastPosition;
     }
+    
 }
