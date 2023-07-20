@@ -7,8 +7,9 @@ public class GameManager : MonoBehaviour
     public static GameManager instance;
 
     [Header("Managers")]
-    [SerializeField] InputManager inputManager;
-    [SerializeField] PlacementManager placementManager;
+    public InputManager inputManager;
+    public PlacementManager placementManager;
+    public CameraManager cameraManager;
 
     private void Awake()
     {
@@ -24,7 +25,12 @@ public class GameManager : MonoBehaviour
     // Ejecución de los controles
     void Update()
     {
-        inputManager.HandleAction();
+        inputManager.HandleInputs();
         placementManager.ObtainMouseVariables();
+    }
+
+    private void FixedUpdate()
+    {
+        cameraManager.HandleMovements();
     }
 }
