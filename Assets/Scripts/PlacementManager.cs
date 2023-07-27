@@ -9,6 +9,10 @@ public class PlacementManager : MonoBehaviour
     [SerializeField] GameObject cellIndicator;
     [SerializeField] InputManager inputManager;
     [SerializeField] Grid grid;
+    private GridData gridData;
+    private Renderer previewRenderer;
+
+    private List<GameObject> placedGameObject = new();
 
     [SerializeField] ObjectDatabase dataBase;
     // Si es -1 no se selecciono ningún objeto
@@ -19,6 +23,8 @@ public class PlacementManager : MonoBehaviour
     private void Start()
     {
         StopPlacement();
+        gridData = new();
+        previewRenderer = cellIndicator.GetComponentInChildren<Renderer>();
     }
 
     // Activa la colocación de un objeto según la id que se le pase
@@ -42,11 +48,30 @@ public class PlacementManager : MonoBehaviour
     {
         if (inputManager.IsPointerOverUI())
             return;
-
         Vector3 mousePosition = inputManager.GetSelectedMapPosition();
         Vector3Int gridPosition = grid.WorldToCell(mousePosition);
+
+        bool placementValidity = CheckValidity(gridPosition, selectedObjectIndex);
+        if (placementValidity == false)
+            return;
+
         GameObject newObject = Instantiate(dataBase.machines[selectedObjectIndex].Prefab);
         newObject.transform.position = grid.CellToWorld(gridPosition);
+        placedGameObject.Add(newObject);
+
+        GridData selectedData = gridData;
+        selectedData.AddObjectAt(gridPosition,
+                                 dataBase.machines[selectedObjectIndex].Size,
+                                 dataBase.machines[selectedObjectIndex].ID,
+                                 placedGameObject.Count - 1);
+    }
+
+    private bool CheckValidity(Vector3Int gridPosition, int selectedObjectIndex)
+    {
+        //GridData selectedData = database.objectData[selectedObjectIndex].ID == 0 ? floorData : gridDat a;
+        GridData selectedData = gridData;
+
+        return selectedData.CanPlaceObjectAt(gridPosition, dataBase.machines[selectedObjectIndex].Size);
     }
 
     // Apaga la colocación
@@ -67,6 +92,11 @@ public class PlacementManager : MonoBehaviour
 
         Vector3 mousePosition = inputManager.GetSelectedMapPosition();
         Vector3Int gridPosition = grid.WorldToCell(mousePosition);
+
+        bool placementValidity = CheckValidity(gridPosition, selectedObjectIndex);
+        previewRenderer.material.color = placementValidity ? Color.white : Color.red;
+        if (placementValidity == false)
+            return;
 
         mouseIndicator.transform.position = mousePosition;
         cellIndicator.transform.position = grid.CellToWorld(gridPosition);
