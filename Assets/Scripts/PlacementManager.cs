@@ -96,7 +96,7 @@ public class PlacementManager : MonoBehaviour
         bool placementValidity = CheckValidity(gridPosition, selectedObjectIndex);
         previewRenderer.material.color = placementValidity ? Color.white : Color.red;
         if (placementValidity == false)
-            return;
+            //return;
 
         mouseIndicator.transform.position = mousePosition;
         cellIndicator.transform.position = grid.CellToWorld(gridPosition);

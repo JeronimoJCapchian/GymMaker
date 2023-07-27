@@ -424,3 +424,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a4e3ba5b7b6cf14bbbc013e6cb36867, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nameText: {fileID: 7495536219593230113}
+  image: {fileID: 2664997336363187900}
+  button: {fileID: 7495536219656119029}
+  machineSprite: {fileID: 0}
+  machineName: 
+  machineIndex: 0

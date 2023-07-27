@@ -8,25 +8,22 @@ public class MachineButton : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI nameText;
     [SerializeField] Image image;
-    [SerializeField] Button button;
+    Button button;
 
-    public Sprite machineSprite;
-    public string machineName;
-    public int machineIndex;
+    public int machineIndex { get; private set; }
 
     private void Awake()
     {
-        image = GetComponentInChildren<Image>();
-        nameText = GetComponentInChildren<TextMeshProUGUI>();
         button = GetComponent<Button>();
-
-        LoadAttributes();
     }
 
-    void LoadAttributes()
+    public void LoadAttributes(int ID, Sprite sp, string name)
     {
-        image.sprite = machineSprite;
-        nameText.text = "" + machineName;
+        machineIndex = ID;
+        image.sprite = sp;
+        nameText.text = name;
+
+        button.onClick.AddListener(() => GameManager.instance.placementManager.StartPlacement(machineIndex));
     }
 
     private void OnEnable()
@@ -35,9 +32,4 @@ public class MachineButton : MonoBehaviour
         // nameText.text = machineName;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
 }
