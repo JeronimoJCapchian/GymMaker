@@ -627,7 +627,7 @@ PlayerSettings:
     PS4: dUI_MANAGER;dUI_TextMeshPro
     PS5: dUI_MANAGER;dUI_TextMeshPro
     Stadia: dUI_MANAGER;dUI_TextMeshPro
-    Standalone: dUI_MANAGER;dUI_TextMeshPro
+    Standalone: dUI_MANAGER;dUI_TextMeshPro;AMPLIFY_SHADER_EDITOR
     WebGL: dUI_MANAGER;dUI_TextMeshPro
     Windows Store Apps: dUI_MANAGER;dUI_TextMeshPro
     XboxOne: dUI_MANAGER;dUI_TextMeshPro
