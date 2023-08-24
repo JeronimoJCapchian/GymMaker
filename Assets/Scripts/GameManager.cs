@@ -10,6 +10,9 @@ public class GameManager : MonoBehaviour
     public InputManager inputManager;
     public PlacementManager placementManager;
     public CameraManager cameraManager;
+    public UIHandler uIHandler;
+
+    public ObjectDatabase objectDatabase;
 
     private void Awake()
     {

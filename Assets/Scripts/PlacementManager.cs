@@ -75,7 +75,7 @@ public class PlacementManager : MonoBehaviour
     }
 
     // Apaga la colocación
-    void StopPlacement()
+    public void StopPlacement()
     {
         selectedObjectIndex = -1;
         //gridVisualization.SetActive(false);

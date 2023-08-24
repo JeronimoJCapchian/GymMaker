@@ -6,29 +6,23 @@ public class UIHandler : MonoBehaviour
 {
     [SerializeField] ObjectDatabase objectDatabase;
 
-    [SerializeField] GameObject buttonMachinePrefab;
-    [SerializeField] GameObject buttonContainer;
+    [SerializeField] GameObject containers;
+    [SerializeField] List<Container> machinesContainers = new();
+
+    [SerializeField] GameObject buttonPrefab;
+
+    
     //[SerializeField] Transform spawnPosition;
+
 
     private void OnEnable()
     {
-        
-    }
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        foreach (var item in objectDatabase.machines)
+        for (var i = 0; i < containers.transform.childCount; i++)
         {
-            var prefab = Instantiate(buttonMachinePrefab, buttonContainer.transform).GetComponent<MachineButton>();
-
-            prefab.LoadAttributes(item.ID, item.Icon, item.Name);
+            Debug.Log(containers.transform.GetChild(i).GetComponent<Container>());
+            machinesContainers.Add(containers.transform.GetChild(i).GetComponent<Container>());
+            machinesContainers[i].TurnContainer();
         }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
 }
