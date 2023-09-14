@@ -23,13 +23,17 @@ public class Machine
     public Sprite Icon { get; private set; }
     [field: SerializeField]
     public GameObject Prefab { get; private set; }
+    [field: SerializeField]
+    public MachineType Type { get; private set; }
 }
 
 public enum MachineType
 {
     Push,
     Pull,
-    Legs
+    Legs,
+    Weights,
+    Cardio
 }
 [Serializable]
 public class Floors

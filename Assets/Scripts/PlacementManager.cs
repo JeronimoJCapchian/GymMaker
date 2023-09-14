@@ -6,13 +6,11 @@ using UnityEngine;
 public class PlacementManager : MonoBehaviour
 {
     [SerializeField] GameObject mouseIndicator;
-    [SerializeField] GameObject cellIndicator;
     [SerializeField] InputManager inputManager;
     [SerializeField] Grid grid;
-    private GridData gridData;
-    private Renderer previewRenderer;
+    [SerializeField] private GridData gridData;
 
-    private List<GameObject> placedGameObject = new();
+    [SerializeField] private List<GameObject> placedGameObject = new();
 
     [SerializeField] ObjectDatabase dataBase;
     // Si es -1 no se selecciono ningún objeto
@@ -20,11 +18,20 @@ public class PlacementManager : MonoBehaviour
 
     //[SerializeField] GameObject gridVisualization;
 
+    [SerializeField] PreviewSystem preview;
+
+    Vector3Int lastDetectedPosition = Vector3Int.zero;
+
     private void Start()
     {
         StopPlacement();
+
         gridData = new();
-        previewRenderer = cellIndicator.GetComponentInChildren<Renderer>();
+        // Debug.Log(gridData);
+        // floorData = new();
+        // Debug.Log(floorData);
+        // furnitureData = new();
+        // Debug.Log(furnitureData);
     }
 
     // Activa la colocación de un objeto según la id que se le pase
@@ -38,7 +45,10 @@ public class PlacementManager : MonoBehaviour
             return;
         }
         //gridVisualization.SetActive(true);
-        cellIndicator.SetActive(true);
+        preview.StartShowingPlacementPreview(
+            dataBase.machines[selectedObjectIndex].Prefab,
+            dataBase.machines[selectedObjectIndex].Size);
+
         inputManager.OnClicked += PlaceStructure;
         inputManager.OnExit += StopPlacement;
     }
@@ -48,10 +58,12 @@ public class PlacementManager : MonoBehaviour
     {
         if (inputManager.IsPointerOverUI())
             return;
+
         Vector3 mousePosition = inputManager.GetSelectedMapPosition();
         Vector3Int gridPosition = grid.WorldToCell(mousePosition);
 
-        bool placementValidity = CheckValidity(gridPosition, selectedObjectIndex);
+        bool placementValidity = CheckPlacementValidity(gridPosition, selectedObjectIndex);
+
         if (placementValidity == false)
             return;
 
@@ -60,15 +72,25 @@ public class PlacementManager : MonoBehaviour
         placedGameObject.Add(newObject);
 
         GridData selectedData = gridData;
+
+        // GridData selectedData = dataBase.machines[selectedObjectIndex].ID == 0 ?
+        //     floorData :
+        //     furnitureData;
+
         selectedData.AddObjectAt(gridPosition,
-                                 dataBase.machines[selectedObjectIndex].Size,
-                                 dataBase.machines[selectedObjectIndex].ID,
-                                 placedGameObject.Count - 1);
+            dataBase.machines[selectedObjectIndex].Size,
+            dataBase.machines[selectedObjectIndex].ID,
+            placedGameObject.Count - 1);
+
+        preview.UpdatePosition(grid.CellToWorld(gridPosition), false);
     }
 
-    private bool CheckValidity(Vector3Int gridPosition, int selectedObjectIndex)
+    private bool CheckPlacementValidity(Vector3Int gridPosition, int selectedObjectIndex)
     {
-        //GridData selectedData = database.objectData[selectedObjectIndex].ID == 0 ? floorData : gridDat a;
+        // GridData selectedData = dataBase.machines[selectedObjectIndex].ID == 0 ?
+        //     floorData :
+        //     furnitureData;
+
         GridData selectedData = gridData;
 
         return selectedData.CanPlaceObjectAt(gridPosition, dataBase.machines[selectedObjectIndex].Size);
@@ -79,9 +101,10 @@ public class PlacementManager : MonoBehaviour
     {
         selectedObjectIndex = -1;
         //gridVisualization.SetActive(false);
-        cellIndicator.SetActive(false);
+        preview.StopShowingPreview();
         inputManager.OnClicked -= PlaceStructure;
         inputManager.OnExit -= StopPlacement;
+        lastDetectedPosition = Vector3Int.zero;
     }
 
     /// <summary>Obtiene la posición del mouse al activar el modo de colocación</summary>
@@ -93,13 +116,19 @@ public class PlacementManager : MonoBehaviour
         Vector3 mousePosition = inputManager.GetSelectedMapPosition();
         Vector3Int gridPosition = grid.WorldToCell(mousePosition);
 
-        bool placementValidity = CheckValidity(gridPosition, selectedObjectIndex);
-        previewRenderer.material.color = placementValidity ? Color.white : Color.red;
-        if (placementValidity == false)
-            //return;
+        if(lastDetectedPosition != gridPosition)
+        {
+            bool placementValidity = CheckPlacementValidity(gridPosition, selectedObjectIndex);
 
-        mouseIndicator.transform.position = mousePosition;
-        cellIndicator.transform.position = grid.CellToWorld(gridPosition);
+            mouseIndicator.transform.position = mousePosition;
+            preview.UpdatePosition(grid.CellToWorld(gridPosition), placementValidity);
+            lastDetectedPosition = gridPosition;
+        }
+
+
+        // if (placementValidity == false)
+        //     return;
+
     }
 
 }

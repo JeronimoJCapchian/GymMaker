@@ -4,13 +4,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class BuildButton : MonoBehaviour
+public class ItemButton : MonoBehaviour
 {
     [SerializeField] protected TextMeshProUGUI nameText;
     [SerializeField] protected Image image;
-    protected Button button;
+    [SerializeField] protected Button button;
 
-    public int machineIndex { get; private set; }
+    public int itemIndex { get; private set; }
 
     private void Awake()
     {
@@ -19,7 +19,7 @@ public class BuildButton : MonoBehaviour
 
     public void LoadAttributes(int ID, Sprite sp, string name)
     {
-        machineIndex = ID;
+        itemIndex = ID;
         image.sprite = sp;
         nameText.text = name;
     }

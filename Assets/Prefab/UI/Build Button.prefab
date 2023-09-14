@@ -300,9 +300,9 @@ GameObject:
   - component: {fileID: 7495536219656119027}
   - component: {fileID: 7495536219656119028}
   - component: {fileID: 7495536219656119029}
-  - component: {fileID: 4850174924728461401}
+  - component: {fileID: -123525878296904921}
   m_Layer: 5
-  m_Name: Button
+  m_Name: Build Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -412,7 +412,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &4850174924728461401
+--- !u!114 &-123525878296904921
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -421,12 +421,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 7495536219656119031}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3a4e3ba5b7b6cf14bbbc013e6cb36867, type: 3}
+  m_Script: {fileID: 11500000, guid: cef685d1242778c4a9b03e39a119f22a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   nameText: {fileID: 7495536219593230113}
   image: {fileID: 2664997336363187900}
-  button: {fileID: 7495536219656119029}
-  machineSprite: {fileID: 0}
-  machineName: 
-  machineIndex: 0
+  button: {fileID: 0}

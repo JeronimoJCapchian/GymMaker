@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
     [Header("Managers")]
     public InputManager inputManager;
     public PlacementManager placementManager;
+    public FloorSystem floorSystem;
     public CameraManager cameraManager;
     public UIHandler uIHandler;
 

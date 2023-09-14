@@ -34,8 +34,8 @@ public class InputManager : MonoBehaviour
             playerControls.Gameplay.CameraMovement.performed += i => movementAxis = i.ReadValue<Vector2>();
             playerControls.Gameplay.CameraRotation.performed += i => rotationAxis = i.ReadValue<Vector2>();
 
-            // playerControls.Gameplay.CameraRotationLeft.performed += i => turnLeft = true;
-            // playerControls.Gameplay.CameraRotationLeft.canceled += i => turnLeft = false;
+            //playerControls.Gameplay.CameraRotationLeft.performed += i => turnLeft = true;
+            //playerControls.Gameplay.CameraRotationLeft.canceled += i => turnLeft = false;
 
             // playerControls.Gameplay.CameraRotationRight.performed += i => turnRight = true;
             // playerControls.Gameplay.CameraRotationRight.canceled += i => turnRight = false;
@@ -62,6 +62,8 @@ public class InputManager : MonoBehaviour
             OnClicked?.Invoke();
         if (Input.GetKeyDown(KeyCode.Escape))
             OnExit?.Invoke();
+
+        
     }
 
     void HandleMovementAxis()
