@@ -21,11 +21,11 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _TextureSample0:
-        m_Texture: {fileID: 2800000, guid: ee79bba56e3018a418b3453989d74875, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _TextureSample1:
-        m_Texture: {fileID: 2800000, guid: 4b5393bdc4f500144aee4af3446ebaf8, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _TextureSample2:
@@ -49,7 +49,7 @@ Material:
     - _TransShadow: 0.9
     - _Translucency: 1
     - __dirty: 0
-    - _tiling: 0.33451572
+    - _tiling: 0.24
     - _tiling1: 0.23845656
     m_Colors:
     - _Color0: {r: 1, g: 0, b: 0, a: 0}

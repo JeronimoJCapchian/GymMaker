@@ -1,46 +1,36 @@
-﻿// Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
-
+// Made with Amplify Shader Editor v1.9.1.3
+// Available at the Unity Asset Store - http://u3d.as/y3X 
 Shader "FX/MirrorReflection"
 {
 	Properties
 	{
-		_MainTex ("Base (RGB)", 2D) = "white" {}
-		[HideInInspector] _ReflectionTex ("", 2D) = "white" {}
+		[HideInInspector] __dirty( "", Int ) = 1
 	}
+
 	SubShader
 	{
-		Tags { "RenderType"="Opaque" }
-		LOD 100
- 
-		Pass {
-			CGPROGRAM
-			#pragma vertex vert
-			#pragma fragment frag
-			#include "UnityCG.cginc"
-			struct v2f
-			{
-				float2 uv : TEXCOORD0;
-				float4 refl : TEXCOORD1;
-				float4 pos : SV_POSITION;
-			};
-			float4 _MainTex_ST;
-			v2f vert(float4 pos : POSITION, float2 uv : TEXCOORD0)
-			{
-				v2f o;
-				o.pos = UnityObjectToClipPos (pos);
-				o.uv = TRANSFORM_TEX(uv, _MainTex);
-				o.refl = ComputeScreenPos (o.pos);
-				return o;
-			}
-			sampler2D _MainTex;
-			sampler2D _ReflectionTex;
-			fixed4 frag(v2f i) : SV_Target
-			{
-				fixed4 tex = tex2D(_MainTex, i.uv);
-				fixed4 refl = tex2Dproj(_ReflectionTex, UNITY_PROJ_COORD(i.refl));
-				return tex * refl;
-			}
-			ENDCG
-	    }
+		Tags{ "RenderType" = "Opaque"  "Queue" = "Geometry+0" }
+		Cull Back
+		CGPROGRAM
+		#pragma target 3.0
+		#pragma surface surf Standard keepalpha addshadow fullforwardshadows 
+		struct Input
+		{
+			half filler;
+		};
+
+		void surf( Input i , inout SurfaceOutputStandard o )
+		{
+			o.Alpha = 1;
+		}
+
+		ENDCG
 	}
+	Fallback "Diffuse"
+	CustomEditor "ASEMaterialInspector"
 }
+/*ASEBEGIN
+Version=19103
+Node;AmplifyShaderEditor.StandardSurfaceOutputNode;0;-122.6199,-135.5645;Float;False;True;-1;2;ASEMaterialInspector;0;0;Standard;FX/MirrorReflection;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;False;Back;0;False;;0;False;;False;0;False;;0;False;;False;0;Opaque;0.5;True;True;0;False;Opaque;;Geometry;All;12;all;True;True;True;True;0;False;;False;0;False;;255;False;;255;False;;0;False;;0;False;;0;False;;0;False;;0;False;;0;False;;0;False;;0;False;;False;2;15;10;25;False;0.5;True;0;0;False;;0;False;;0;0;False;;0;False;;0;False;;0;False;;0;False;0;0,0,0,0;VertexOffset;True;False;Cylindrical;False;True;Relative;0;;0;-1;-1;-1;0;False;0;0;False;;-1;0;False;;0;0;0;False;0.1;False;;0;False;;False;16;0;FLOAT3;0,0,0;False;1;FLOAT3;0,0,0;False;2;FLOAT3;0,0,0;False;3;FLOAT;0;False;4;FLOAT;0;False;5;FLOAT;0;False;6;FLOAT3;0,0,0;False;7;FLOAT3;0,0,0;False;8;FLOAT;0;False;9;FLOAT;0;False;10;FLOAT;0;False;13;FLOAT3;0,0,0;False;11;FLOAT3;0,0,0;False;12;FLOAT3;0,0,0;False;14;FLOAT4;0,0,0,0;False;15;FLOAT3;0,0,0;False;0
+ASEEND*/
+//CHKSM=D23B2E212EE76CA4AA8D277A18BA7FFB8E027D83
