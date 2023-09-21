@@ -35,6 +35,22 @@ public class GridData
         return returnVal;
     }
 
+    public int GetRepresentationIndex(Vector3Int gridPosition)
+    {
+        if (!placedMachines.ContainsKey(gridPosition))
+            return -1;
+
+        return placedMachines[gridPosition].PlacedObjectIndex;
+    }
+
+    public void RemoveObjectAt(Vector3Int gridPosition)
+    {
+        foreach (var position in placedMachines[gridPosition].occupiedPosition)
+        {
+            placedMachines.Remove(position);
+        }
+    }
+
     public bool CanPlaceObjectAt(Vector3Int gridPosition, Vector2Int objectSize)
     {
         List<Vector3Int> positionToOccupy = CalculatePositions(gridPosition, objectSize);

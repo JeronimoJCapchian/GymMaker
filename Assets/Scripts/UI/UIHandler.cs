@@ -1,9 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.UI;
 using UnityEngine;
 
 public class UIHandler : MonoBehaviour
 {
+    GameManager gameManager;
+    PlacementManager placementManager;
     [SerializeField] ObjectDatabase objectDatabase;
 
     [Header("Paneles Proprieties")]
@@ -15,10 +18,13 @@ public class UIHandler : MonoBehaviour
     [SerializeField] List<Container> machinesContainers = new();
     [SerializeField] Container currentContainer;
 
+    [Header("Buttons Proprieties")]
+    [SerializeField] Sprite removeIconOpen;
+    [SerializeField] Sprite removeIconClose;
+    [SerializeField] Image removingIcon;
+
     [SerializeField] GameObject buttonPrefab;
 
-    bool isMachinePanel;
-    bool isFloorPanel;
     //[SerializeField] Transform spawnPosition;
 
 
@@ -39,11 +45,17 @@ public class UIHandler : MonoBehaviour
         currentContainer.gameObject.SetActive(true);
     }
 
+    private void Start()
+    {
+        gameManager = GameManager.instance;
+        placementManager = gameManager.placementManager;
+    }
+
     #region Panel Region
 
     void MovePanel()
     {
-        
+
     }
 
     #endregion
@@ -52,7 +64,7 @@ public class UIHandler : MonoBehaviour
 
     public void TurnContainer(Container container)
     {
-        if(container != currentContainer)
+        if (container != currentContainer)
         {
             currentContainer.gameObject.SetActive(false);
             currentContainer = container;
@@ -62,5 +74,21 @@ public class UIHandler : MonoBehaviour
     }
 
     #endregion  Containers
+
+    #region Buttons Region
+
+    public void UpdateButton(bool state)
+    {
+        // if (placementManager.isRemoving)
+        //     removingIcon.sprite = removeIconOpen;
+        // else
+        //     removingIcon.sprite = removeIconClose;
+        if (state)
+            removingIcon.sprite = removeIconOpen;
+        else
+            removingIcon.sprite = removeIconClose;
+    }
+
+    #endregion
 
 }
