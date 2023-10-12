@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlacementState : IBuildingState
+public class PlacementState : IBuildingState, IObserver
 {
     private int selectedObjectIndex = -1;
     int ID;
@@ -36,20 +36,30 @@ public class PlacementState : IBuildingState
         }
         else
             throw new System.Exception($"No object with ID {iD}");
+
+        GameManager.instance.inputManager.Subscribe(this);
+        previewSystem.isRotated = false;
     }
 
     public void EndeState()
     {
         previewSystem.StopShowingPreview();
+        previewSystem.isRotated = false;
+    }
+
+    private void OnDestroy()
+    {
+        GameManager.instance.inputManager.UnSubscribe(this);
     }
 
     public void OnAction(Vector3Int gridPosition)
     {
+        
         bool placementValidity = CheckPlacementValidity(gridPosition, selectedObjectIndex);
         if (placementValidity == false)
             return;
 
-        int index = objectPlacer.PlaceObject(database.machines[selectedObjectIndex].Prefab, grid.CellToWorld(gridPosition));
+        int index = objectPlacer.PlaceObject(database.machines[selectedObjectIndex].Prefab, grid.CellToWorld(gridPosition), previewSystem.isRotated);
 
         GridData selectedData = gridData;
 
@@ -81,5 +91,12 @@ public class PlacementState : IBuildingState
         bool placementValidity = CheckPlacementValidity(gridPosition, selectedObjectIndex);
 
         previewSystem.UpdatePosition(grid.CellToWorld(gridPosition), placementValidity);
+    }
+
+    public void Notify(IObservable observable)
+    {
+        Debug.Log("Roto");
+        previewSystem.RotateObject();
+        
     }
 }

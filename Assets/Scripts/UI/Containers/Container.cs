@@ -6,13 +6,18 @@ using UnityEngine.UI;
 
 public class Container : MonoBehaviour
 {
-    [SerializeField] UIHandler uIHandler;
+    [SerializeField] protected GameManager gameManager;
+    [SerializeField] protected ObjectDatabase objectDatabase;
+    [SerializeField] protected UIHandler uIHandler;
     [SerializeField] protected Transform buttonContainer;
     [SerializeField] protected GameObject buttonPrefab;
 
     private void Start()
     {
-        uIHandler = GameManager.instance.uIHandler;
+        gameManager = GameManager.instance;
+        uIHandler = gameManager.uIHandler;
+        objectDatabase = gameManager.objectDatabase;
+
         LoadButtons(buttonPrefab.gameObject);
     }
 

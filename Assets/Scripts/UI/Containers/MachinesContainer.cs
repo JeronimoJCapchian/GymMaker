@@ -4,14 +4,19 @@ using UnityEngine;
 
 public class MachinesContainer : Container
 {
+    public MachineType type;
+
     public override void LoadButtons(GameObject buttonPrefab)
     {
-        foreach (var item in GameManager.instance.objectDatabase.machines)
+        foreach (var item in objectDatabase.machines)
         {
-            var prefab = Instantiate(buttonPrefab, buttonContainer.transform).GetComponent<BuildButton>();
+            if(item.Type == type)
+            {
+                var prefab = Instantiate(buttonPrefab, buttonContainer.transform).GetComponent<BuildButton>();
 
-            prefab.LoadAttributes(item.ID, item.Icon, item.Name);
-            prefab.LoadButton();
+                prefab.LoadAttributes(item.ID, item.Icon, item.Name);
+                prefab.LoadButton();
+            }
         }
     }
 }

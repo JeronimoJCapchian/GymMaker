@@ -8,12 +8,14 @@ public class PreviewSystem : MonoBehaviour
     [SerializeField] float previewYOffset = 0.06f;
 
     [SerializeField] GameObject cellIndicator;
-    GameObject previewObject;
+    [SerializeField] GameObject previewObject;
 
     [SerializeField] Material previewMaterialPrefab;
     Material previewMaterialInstance;
 
     Renderer cellIndicatorRenderer;
+
+    public bool isRotated;
 
     private void Start()
     {
@@ -63,13 +65,13 @@ public class PreviewSystem : MonoBehaviour
     public void StopShowingPreview()
     {
         cellIndicator.SetActive(false);
-        if(previewObject != null)
+        if (previewObject != null)
             Destroy(previewObject);
     }
 
     public void UpdatePosition(Vector3 position, bool validity)
     {
-        if(previewObject != null)
+        if (previewObject != null)
         {
             MovePreview(position);
             ApplyFeedbackToPreview(validity);
@@ -77,6 +79,31 @@ public class PreviewSystem : MonoBehaviour
 
         MoveCursor(position);
         ApplyFeedbackToCursor(validity);
+    }
+
+    public void RotateObject()
+    {
+        Debug.Log("Roto Roto");
+        var previousSize = cellIndicator.transform.localScale;
+        cellIndicator.transform.localScale = new(previousSize.z, 1, previousSize.x);
+
+        if (previewObject.transform.eulerAngles != Vector3.zero)
+        {
+            Debug.Log("No roto");
+            previewObject.transform.eulerAngles = Vector3.zero;
+            previewObject.transform.position = new(previewObject.transform.position.x,
+                                                   previewObject.transform.position.y,
+                                                   previewObject.transform.position.z - 1);
+        }
+        else
+        {
+            Debug.Log("Si roto");
+            previewObject.transform.Rotate(new(0f, 90f, 0f));
+            previewObject.transform.position = new(previewObject.transform.position.x,
+                                                   previewObject.transform.position.y,
+                                                   previewObject.transform.position.z + 1);
+        }
+
     }
 
     private void ApplyFeedbackToPreview(bool validity)

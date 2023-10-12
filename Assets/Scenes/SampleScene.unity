@@ -1936,6 +1936,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eaf72a6f878387949b41e9a2b26c6163, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameManager: {fileID: 1502330164}
+  placementManager: {fileID: 1318380945}
   sceneCamera: {fileID: 963194227}
   placementLayerMask:
     serializedVersion: 2
@@ -1946,6 +1948,7 @@ MonoBehaviour:
   rotationAxis: {x: 0, y: 0}
   turnLeft: 0
   turnRight: 0
+  rotateStructure: 0
 --- !u!4 &469640192
 Transform:
   m_ObjectHideFlags: 0
@@ -2148,9 +2151,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8fbd625ce01f6646adfdddd675fb7d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameManager: {fileID: 0}
+  objectDatabase: {fileID: 0}
   uIHandler: {fileID: 0}
   buttonContainer: {fileID: 1029257754}
   buttonPrefab: {fileID: 7495536219656119031, guid: cac4efa6cb7a86341850d31bfcd87fda, type: 3}
+  type: 3
 --- !u!114 &563194401
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2537,9 +2543,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8fbd625ce01f6646adfdddd675fb7d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameManager: {fileID: 0}
+  objectDatabase: {fileID: 0}
   uIHandler: {fileID: 0}
   buttonContainer: {fileID: 69096770}
   buttonPrefab: {fileID: 7495536219656119031, guid: cac4efa6cb7a86341850d31bfcd87fda, type: 3}
+  type: 0
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -4662,7 +4671,7 @@ MonoBehaviour:
         m_MethodName: TurnContainer
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 695234864}
+          m_ObjectArgument: {fileID: 563194400}
           m_ObjectArgumentAssemblyTypeName: Container, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -4796,9 +4805,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8fbd625ce01f6646adfdddd675fb7d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameManager: {fileID: 0}
+  objectDatabase: {fileID: 0}
   uIHandler: {fileID: 0}
   buttonContainer: {fileID: 458755080}
   buttonPrefab: {fileID: 7495536219656119031, guid: cac4efa6cb7a86341850d31bfcd87fda, type: 3}
+  type: 2
 --- !u!114 &1618588612
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5080,6 +5092,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3fd8db3966b9e64bb923c12066f5ac7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameManager: {fileID: 0}
+  objectDatabase: {fileID: 0}
   uIHandler: {fileID: 0}
   buttonContainer: {fileID: 1983039894}
   buttonPrefab: {fileID: 7495536219656119031, guid: 3f4757390a26f57489662cc4093dec4b, type: 3}
@@ -5210,7 +5224,7 @@ MonoBehaviour:
         m_MethodName: TurnContainer
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 695234864}
+          m_ObjectArgument: {fileID: 1618588611}
           m_ObjectArgumentAssemblyTypeName: Container, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -5478,7 +5492,7 @@ MonoBehaviour:
         m_MethodName: TurnContainer
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 695234864}
+          m_ObjectArgument: {fileID: 1891473740}
           m_ObjectArgumentAssemblyTypeName: Container, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -5612,7 +5626,7 @@ MonoBehaviour:
         m_MethodName: TurnContainer
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 695234864}
+          m_ObjectArgument: {fileID: 1905407262}
           m_ObjectArgumentAssemblyTypeName: Container, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -6140,9 +6154,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8fbd625ce01f6646adfdddd675fb7d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameManager: {fileID: 0}
+  objectDatabase: {fileID: 0}
   uIHandler: {fileID: 0}
   buttonContainer: {fileID: 1569160267}
   buttonPrefab: {fileID: 7495536219656119031, guid: cac4efa6cb7a86341850d31bfcd87fda, type: 3}
+  type: 1
 --- !u!114 &1891473741
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6360,9 +6377,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8fbd625ce01f6646adfdddd675fb7d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameManager: {fileID: 0}
+  objectDatabase: {fileID: 0}
   uIHandler: {fileID: 0}
   buttonContainer: {fileID: 1558646014}
   buttonPrefab: {fileID: 7495536219656119031, guid: cac4efa6cb7a86341850d31bfcd87fda, type: 3}
+  type: 4
 --- !u!114 &1905407263
 MonoBehaviour:
   m_ObjectHideFlags: 0

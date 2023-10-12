@@ -48,6 +48,17 @@ public class PlacementManager : MonoBehaviour
         inputManager.OnExit += StopPlacement;
     }
 
+    // public void RotateStructure()
+    // {
+    //     if(buildingState == null)
+    //         Debug.Log("No hay estructura");
+
+    //     buildingState = new RotatingState();
+
+    //     inputManager.OnClicked += PlaceStructure;
+    //     inputManager.OnExit += StopPlacement;
+    // }
+
 
     public void StartRemoving()
     {

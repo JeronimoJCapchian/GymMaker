@@ -51,15 +51,6 @@ public class UIHandler : MonoBehaviour
         placementManager = gameManager.placementManager;
     }
 
-    #region Panel Region
-
-    void MovePanel()
-    {
-
-    }
-
-    #endregion
-
     #region  Container Region
 
     public void TurnContainer(Container container)

@@ -22,6 +22,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "StructureRotation",
+                    "type": "Button",
+                    "id": "5233cc45-b6dd-478c-8b5c-83d1fe4f3664",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -112,6 +121,17 @@
                     "action": "CameraRotation",
                     "isComposite": false,
                     "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "b7e45300-7562-4ec6-b07a-9b252cdf47d0",
+                    "path": "<Keyboard>/r",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "StructureRotation",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         },

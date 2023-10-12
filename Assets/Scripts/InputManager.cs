@@ -4,8 +4,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class InputManager : MonoBehaviour
+public class InputManager : MonoBehaviour, IObservable
 {
+    [SerializeField] GameManager gameManager;
+    [SerializeField] PlacementManager placementManager;
     [SerializeField] Camera sceneCamera;
     [SerializeField] LayerMask placementLayerMask;
     Vector3 lastPosition;
@@ -19,6 +21,7 @@ public class InputManager : MonoBehaviour
     [SerializeField] Vector2 rotationAxis;
     public float turnLeft;
     public float turnRight;
+    public bool rotateStructure;
 
     [SerializeField] PlayerControls playerControls;
 
@@ -34,13 +37,15 @@ public class InputManager : MonoBehaviour
             playerControls.Gameplay.CameraMovement.performed += i => movementAxis = i.ReadValue<Vector2>();
             playerControls.Gameplay.CameraRotation.performed += i => rotationAxis = i.ReadValue<Vector2>();
 
+            playerControls.Gameplay.StructureRotation.started += i => OnNotify();
+            //playerControls.Gameplay.StructureRotation.canceled += i => rotateStructure = false;
+
             //playerControls.Gameplay.CameraRotationLeft.performed += i => turnLeft = true;
             //playerControls.Gameplay.CameraRotationLeft.canceled += i => turnLeft = false;
 
             // playerControls.Gameplay.CameraRotationRight.performed += i => turnRight = true;
             // playerControls.Gameplay.CameraRotationRight.canceled += i => turnRight = false;
         }
-
         playerControls.Enable();
     }
 
@@ -62,6 +67,12 @@ public class InputManager : MonoBehaviour
             OnClicked?.Invoke();
         if (Input.GetKeyDown(KeyCode.Escape))
             OnExit?.Invoke();
+        
+        // if(rotateStructure)
+        // {
+        //     OnNotify();
+        //     rotateStructure = false;
+        // }
     }
 
     void HandleMovementAxis()
@@ -94,4 +105,23 @@ public class InputManager : MonoBehaviour
         return lastPosition;
     }
 
+    List<IObserver> observers = new();
+
+    public void Subscribe(IObserver observer)
+    {
+        observers.Add(observer);
+    }
+
+    public void UnSubscribe(IObserver observer)
+    {
+        observers.Remove(observer);
+    }
+
+    public void OnNotify(params object[] parameters)
+    {
+        foreach (var observer in observers)
+        {
+            observer.Notify(this);
+        }
+    }
 }
