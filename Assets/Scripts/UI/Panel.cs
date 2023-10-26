@@ -11,21 +11,17 @@ public class Panel : MonoBehaviour
     [SerializeField] UIHandler uIHandler;
     [Header("Propiedades")]
     [SerializeField] RectTransform rectTransform;
-    [SerializeField] Button openCloseButton;
-    [SerializeField] TextMeshProUGUI textButton;
     [Header("Posiciones")]
     [SerializeField] Vector2 closeTransform;
     [SerializeField] Vector2 openTransform;
     [Header("Variables")]
     [Range(0.1f, 1f)] [SerializeField] float openDuration;
     [Range(0.1f, 1f)] [SerializeField] float closeDuration;
-    [SerializeField] string openText;
-    [SerializeField] string closeText;
+    [SerializeField] GameObject openGameObject;
+    [SerializeField] GameObject closeGameObject;
     [SerializeField] Ease openEaseType;
     [SerializeField] Ease closeEaseType;
     [SerializeField] bool isOpen;
-
-    [SerializeField] AnimationCurve pepito;
 
     void Start()
     {
@@ -50,16 +46,18 @@ public class Panel : MonoBehaviour
     {
         if(isOpen)
         {
-            //rectTransform.anchoredPosition = closeTransform;
-            rectTransform.DOAnchorPos(closeTransform, openDuration).SetEase(pepito);
-            textButton.text = closeText;
+            // Close
+            rectTransform.DOAnchorPos(closeTransform, openDuration).SetEase(closeEaseType);
+            openGameObject.SetActive(true);
+            closeGameObject.SetActive(false);
             isOpen = false;
         }
         else
         {
-            //rectTransform.anchoredPosition = openTransform;
-            rectTransform.DOAnchorPos(openTransform, closeDuration).SetEase(pepito);
-            textButton.text = openText;
+            // Open
+            rectTransform.DOAnchorPos(openTransform, closeDuration).SetEase(openEaseType);
+            openGameObject.SetActive(false);
+            closeGameObject.SetActive(true);
             isOpen = true;
         }
     }
