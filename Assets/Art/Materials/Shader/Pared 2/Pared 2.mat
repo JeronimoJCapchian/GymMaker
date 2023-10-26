@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: alfombra2
-  m_Shader: {fileID: 4800000, guid: 559a249d205336549b5e9898a4117ef7, type: 3}
+  m_Name: Pared 2
+  m_Shader: {fileID: 4800000, guid: d1bcd0453362e564082f619c24ee0c70, type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords: []
   m_LightmapFlags: 4
@@ -21,15 +21,11 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _TextureSample0:
-        m_Texture: {fileID: 2800000, guid: f39c2a4f1388df34eb151c01fee2ca3d, type: 3}
+        m_Texture: {fileID: 2800000, guid: 178ce74d18c4d634db7149ecf9c679e9, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _TextureSample1:
-        m_Texture: {fileID: 2800000, guid: 77cf56c5068deee40b91026121bf1f1e, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _TopTexture0:
-        m_Texture: {fileID: 2800000, guid: c1770a2d69878cd49bfb9f964bb6d9f8, type: 3}
+        m_Texture: {fileID: 2800000, guid: 178ce74d18c4d634db7149ecf9c679e9, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _texcoord:
@@ -38,13 +34,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Float0: 0.8701215
-    - _Float1: 3.56
     - __dirty: 1
     m_Colors:
-    - _Color0: {r: 0.8980392, g: 0.061463494, b: 0, a: 0}
-    - _Pointscolor: {r: 0.8980392, g: 0.061463494, b: 0, a: 0}
-    - _Vector0: {r: 3.15, g: 2.05, b: 0, a: 0}
-    - _Vector1: {r: 1, g: 1, b: 0, a: 0}
-    - _Vector2: {r: 0.3, g: 0.7, b: 0, a: 0}
+    - _Color0: {r: 0.9622642, g: 0.9622642, b: 0.9622642, a: 0}
   m_BuildTextureStacks: []
