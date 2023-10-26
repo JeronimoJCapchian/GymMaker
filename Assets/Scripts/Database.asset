@@ -31,12 +31,42 @@ MonoBehaviour:
     <Icon>k__BackingField: {fileID: 0}
     <Prefab>k__BackingField: {fileID: 6521013969810980438, guid: ba96522740b505f42a93427d30a8c3d9, type: 3}
     <Type>k__BackingField: 0
+  - <Name>k__BackingField: Bicicleta
+    <ID>k__BackingField: 3
+    <Size>k__BackingField: {x: 2, y: 1}
+    <Icon>k__BackingField: {fileID: 0}
+    <Prefab>k__BackingField: {fileID: 6199116768757601279, guid: b09b6516e8d69424e90a8d68fd6a92d5, type: 3}
+    <Type>k__BackingField: 4
+  - <Name>k__BackingField: Sillon de cuadriceps
+    <ID>k__BackingField: 4
+    <Size>k__BackingField: {x: 2, y: 2}
+    <Icon>k__BackingField: {fileID: 0}
+    <Prefab>k__BackingField: {fileID: 674180595386949146, guid: 92231cfa4346b0b45bf3feb2e9ea0b36, type: 3}
+    <Type>k__BackingField: 2
+  - <Name>k__BackingField: Prensa
+    <ID>k__BackingField: 5
+    <Size>k__BackingField: {x: 2, y: 2}
+    <Icon>k__BackingField: {fileID: 0}
+    <Prefab>k__BackingField: {fileID: 1149513960234712834, guid: 053a35c31c3a27e4cb62272e56334549, type: 3}
+    <Type>k__BackingField: 2
+  - <Name>k__BackingField: Polea doble
+    <ID>k__BackingField: 6
+    <Size>k__BackingField: {x: 3, y: 1}
+    <Icon>k__BackingField: {fileID: 0}
+    <Prefab>k__BackingField: {fileID: 85347493018986770, guid: 930251d064af63c4a85da47a7c7df1b6, type: 3}
+    <Type>k__BackingField: 0
+  - <Name>k__BackingField: Peck Deck
+    <ID>k__BackingField: 7
+    <Size>k__BackingField: {x: 4, y: 4}
+    <Icon>k__BackingField: {fileID: 0}
+    <Prefab>k__BackingField: {fileID: 8566880177815337577, guid: a4eff5b75838e0f49b978dd20986d59d, type: 3}
+    <Type>k__BackingField: 0
   floors:
   - <Name>k__BackingField: Madera
     <ID>k__BackingField: 0
     <Icon>k__BackingField: {fileID: 0}
-    <Material>k__BackingField: {fileID: 2100000, guid: b9c86758a916b2a40bf38513182a0ec3, type: 2}
+    <Material>k__BackingField: {fileID: 2100000, guid: 4a1fb3460a759674486c10e4e4fb38de, type: 2}
   - <Name>k__BackingField: Madera
-    <ID>k__BackingField: 0
+    <ID>k__BackingField: 1
     <Icon>k__BackingField: {fileID: 0}
     <Material>k__BackingField: {fileID: 2100000, guid: b9c86758a916b2a40bf38513182a0ec3, type: 2}
