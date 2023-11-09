@@ -36,7 +36,7 @@ public class Panel : MonoBehaviour
             foreach (var panel in uIHandler.allPanels)
             {
                 if(panel.isOpen)
-                    return;
+                    panel.MovePanel();
             }
         }
         MovePanel();
