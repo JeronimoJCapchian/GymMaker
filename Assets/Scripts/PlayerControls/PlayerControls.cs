@@ -44,6 +44,15 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""StructureRotation"",
+                    ""type"": ""Button"",
+                    ""id"": ""5233cc45-b6dd-478c-8b5c-83d1fe4f3664"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -134,6 +143,17 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
                     ""action"": ""CameraRotation"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""b7e45300-7562-4ec6-b07a-9b252cdf47d0"",
+                    ""path"": ""<Keyboard>/r"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""StructureRotation"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         },
@@ -172,6 +192,7 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
         m_Gameplay = asset.FindActionMap("Gameplay", throwIfNotFound: true);
         m_Gameplay_CameraMovement = m_Gameplay.FindAction("CameraMovement", throwIfNotFound: true);
         m_Gameplay_CameraRotation = m_Gameplay.FindAction("CameraRotation", throwIfNotFound: true);
+        m_Gameplay_StructureRotation = m_Gameplay.FindAction("StructureRotation", throwIfNotFound: true);
         // UI
         m_UI = asset.FindActionMap("UI", throwIfNotFound: true);
         m_UI_Newaction = m_UI.FindAction("New action", throwIfNotFound: true);
@@ -238,12 +259,14 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
     private List<IGameplayActions> m_GameplayActionsCallbackInterfaces = new List<IGameplayActions>();
     private readonly InputAction m_Gameplay_CameraMovement;
     private readonly InputAction m_Gameplay_CameraRotation;
+    private readonly InputAction m_Gameplay_StructureRotation;
     public struct GameplayActions
     {
         private @PlayerControls m_Wrapper;
         public GameplayActions(@PlayerControls wrapper) { m_Wrapper = wrapper; }
         public InputAction @CameraMovement => m_Wrapper.m_Gameplay_CameraMovement;
         public InputAction @CameraRotation => m_Wrapper.m_Gameplay_CameraRotation;
+        public InputAction @StructureRotation => m_Wrapper.m_Gameplay_StructureRotation;
         public InputActionMap Get() { return m_Wrapper.m_Gameplay; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -259,6 +282,9 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
             @CameraRotation.started += instance.OnCameraRotation;
             @CameraRotation.performed += instance.OnCameraRotation;
             @CameraRotation.canceled += instance.OnCameraRotation;
+            @StructureRotation.started += instance.OnStructureRotation;
+            @StructureRotation.performed += instance.OnStructureRotation;
+            @StructureRotation.canceled += instance.OnStructureRotation;
         }
 
         private void UnregisterCallbacks(IGameplayActions instance)
@@ -269,6 +295,9 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
             @CameraRotation.started -= instance.OnCameraRotation;
             @CameraRotation.performed -= instance.OnCameraRotation;
             @CameraRotation.canceled -= instance.OnCameraRotation;
+            @StructureRotation.started -= instance.OnStructureRotation;
+            @StructureRotation.performed -= instance.OnStructureRotation;
+            @StructureRotation.canceled -= instance.OnStructureRotation;
         }
 
         public void RemoveCallbacks(IGameplayActions instance)
@@ -336,6 +365,7 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
     {
         void OnCameraMovement(InputAction.CallbackContext context);
         void OnCameraRotation(InputAction.CallbackContext context);
+        void OnStructureRotation(InputAction.CallbackContext context);
     }
     public interface IUIActions
     {

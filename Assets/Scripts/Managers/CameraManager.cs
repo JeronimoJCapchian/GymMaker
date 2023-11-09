@@ -40,22 +40,16 @@ public class CameraManager : MonoBehaviour
     {
         //Girar a la derecha
         if (inputManager.turnRight == 1)
-            rotationDirection = new Vector3(0f, transform.rotation.y + cameraConfig.rotationSpeed, 0f);
+            rotationDirection = new Vector3(0f, cameraConfig.rotationSpeed, 0f);
 
         //Girar a la izquierda
         if (inputManager.turnLeft == 1)
-            rotationDirection = new Vector3(0f, transform.rotation.y - cameraConfig.rotationSpeed, 0f);
+            rotationDirection = new Vector3(0f, -cameraConfig.rotationSpeed, 0f);
         
         //No Girar
         if (inputManager.turnLeft == 0 && inputManager.turnRight == 0)
             rotationDirection = new Vector3(0f, 0f, 0f);
 
-
         transform.Rotate(rotationDirection, Space.Self);
     }
-
-    // public void HandleElevation()
-    // {
-
-    // }
 }
