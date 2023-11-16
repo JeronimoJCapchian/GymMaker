@@ -14,7 +14,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &7371343580872914120
 Transform:
@@ -103,9 +103,89 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8667184578498139821, guid: 53e8134884d0cfb4297261f753b4f2bd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: -7539610408865672990, guid: 53e8134884d0cfb4297261f753b4f2bd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: -6361737139097759600, guid: 53e8134884d0cfb4297261f753b4f2bd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: -5539764629200458662, guid: 53e8134884d0cfb4297261f753b4f2bd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: -3983616456723777090, guid: 53e8134884d0cfb4297261f753b4f2bd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: -3086944861826413830, guid: 53e8134884d0cfb4297261f753b4f2bd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: -655515190766560270, guid: 53e8134884d0cfb4297261f753b4f2bd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: -298092508047035362, guid: 53e8134884d0cfb4297261f753b4f2bd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 43366365014335666, guid: 53e8134884d0cfb4297261f753b4f2bd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 314093143175445656, guid: 53e8134884d0cfb4297261f753b4f2bd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 53e8134884d0cfb4297261f753b4f2bd, type: 3}
       propertyPath: m_Name
       value: Mancuernero 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 53e8134884d0cfb4297261f753b4f2bd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 2845450644446803160, guid: 53e8134884d0cfb4297261f753b4f2bd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 2866621852552652557, guid: 53e8134884d0cfb4297261f753b4f2bd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 3960268067419611837, guid: 53e8134884d0cfb4297261f753b4f2bd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 4320835947237081576, guid: 53e8134884d0cfb4297261f753b4f2bd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 5198871999736821009, guid: 53e8134884d0cfb4297261f753b4f2bd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 5784070156406159868, guid: 53e8134884d0cfb4297261f753b4f2bd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 6727007405964328823, guid: 53e8134884d0cfb4297261f753b4f2bd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 8543230979190523824, guid: 53e8134884d0cfb4297261f753b4f2bd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 9091937519273929458, guid: 53e8134884d0cfb4297261f753b4f2bd, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53e8134884d0cfb4297261f753b4f2bd, type: 3}
@@ -177,9 +257,57 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -4.9470215
       objectReference: {fileID: 0}
+    - target: {fileID: -6213753456980432971, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: -5299051916095222727, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: -3292800484116365187, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: -2900712077269430826, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: -2568721664359261378, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 766183730050063172, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
       propertyPath: m_Name
       value: Mancuerna HP (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 2797970754919319833, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 5418768494471476680, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 6232357572449348743, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 8523772855540137367, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 8585600779845878736, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
@@ -251,9 +379,57 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -4.9470215
       objectReference: {fileID: 0}
+    - target: {fileID: -6213753456980432971, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: -5299051916095222727, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: -3292800484116365187, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: -2900712077269430826, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: -2568721664359261378, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 766183730050063172, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
       propertyPath: m_Name
       value: Mancuerna HP (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 2797970754919319833, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 5418768494471476680, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 6232357572449348743, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 8523772855540137367, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 8585600779845878736, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
@@ -325,9 +501,57 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -6.6080017
       objectReference: {fileID: 0}
+    - target: {fileID: -6213753456980432971, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: -5299051916095222727, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: -3292800484116365187, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: -2900712077269430826, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: -2568721664359261378, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 766183730050063172, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
       propertyPath: m_Name
       value: Mancuerna HP (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 2797970754919319833, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 5418768494471476680, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 6232357572449348743, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 8523772855540137367, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 8585600779845878736, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
@@ -399,9 +623,57 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -6.6080017
       objectReference: {fileID: 0}
+    - target: {fileID: -6213753456980432971, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: -5299051916095222727, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: -3292800484116365187, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: -2900712077269430826, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: -2568721664359261378, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 766183730050063172, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
       propertyPath: m_Name
       value: Mancuerna HP (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 2797970754919319833, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 5418768494471476680, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 6232357572449348743, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 8523772855540137367, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 8585600779845878736, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
@@ -473,9 +745,57 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -6.6080017
       objectReference: {fileID: 0}
+    - target: {fileID: -6213753456980432971, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: -5299051916095222727, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: -3292800484116365187, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: -2900712077269430826, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: -2568721664359261378, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 766183730050063172, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
       propertyPath: m_Name
       value: Mancuerna HP (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 2797970754919319833, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 5418768494471476680, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 6232357572449348743, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 8523772855540137367, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 8585600779845878736, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
@@ -547,9 +867,57 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -6.6080017
       objectReference: {fileID: 0}
+    - target: {fileID: -6213753456980432971, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: -5299051916095222727, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: -3292800484116365187, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: -2900712077269430826, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: -2568721664359261378, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 766183730050063172, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
       propertyPath: m_Name
       value: Mancuerna HP (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 2797970754919319833, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 5418768494471476680, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 6232357572449348743, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 8523772855540137367, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 8585600779845878736, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
@@ -621,9 +989,57 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -6.6080017
       objectReference: {fileID: 0}
+    - target: {fileID: -6213753456980432971, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: -5299051916095222727, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: -3292800484116365187, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: -2900712077269430826, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: -2568721664359261378, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 766183730050063172, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
       propertyPath: m_Name
       value: Mancuerna HP (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 2797970754919319833, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 5418768494471476680, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 6232357572449348743, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 8523772855540137367, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 8585600779845878736, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
@@ -695,9 +1111,57 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -4.9470215
       objectReference: {fileID: 0}
+    - target: {fileID: -6213753456980432971, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: -5299051916095222727, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: -3292800484116365187, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: -2900712077269430826, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: -2568721664359261378, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 766183730050063172, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
       propertyPath: m_Name
       value: Mancuerna HP (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 2797970754919319833, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 5418768494471476680, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 6232357572449348743, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 8523772855540137367, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 8585600779845878736, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
@@ -769,9 +1233,57 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -4.9470215
       objectReference: {fileID: 0}
+    - target: {fileID: -6213753456980432971, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: -5299051916095222727, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: -3292800484116365187, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: -2900712077269430826, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: -2568721664359261378, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 766183730050063172, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
       propertyPath: m_Name
       value: Mancuerna HP
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 2797970754919319833, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 5418768494471476680, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 6232357572449348743, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 8523772855540137367, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 8585600779845878736, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
@@ -843,9 +1355,57 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -4.9470215
       objectReference: {fileID: 0}
+    - target: {fileID: -6213753456980432971, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: -5299051916095222727, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: -3292800484116365187, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: -2900712077269430826, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: -2568721664359261378, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 766183730050063172, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
       propertyPath: m_Name
       value: Mancuerna HP (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 2797970754919319833, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 5418768494471476680, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 6232357572449348743, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 8523772855540137367, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 8585600779845878736, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
@@ -917,9 +1477,57 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -6.6080017
       objectReference: {fileID: 0}
+    - target: {fileID: -6213753456980432971, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: -5299051916095222727, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: -3292800484116365187, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: -2900712077269430826, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: -2568721664359261378, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 766183730050063172, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
       propertyPath: m_Name
       value: Mancuerna HP (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 2797970754919319833, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 5418768494471476680, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 6232357572449348743, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 8523772855540137367, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 8585600779845878736, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
@@ -991,9 +1599,57 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -6.6080017
       objectReference: {fileID: 0}
+    - target: {fileID: -6213753456980432971, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: -5299051916095222727, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: -3292800484116365187, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: -2900712077269430826, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: -2568721664359261378, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 766183730050063172, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
       propertyPath: m_Name
       value: Mancuerna HP (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 2797970754919319833, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 5418768494471476680, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 6232357572449348743, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 8523772855540137367, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 8585600779845878736, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
@@ -1065,9 +1721,57 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -4.9470215
       objectReference: {fileID: 0}
+    - target: {fileID: -6213753456980432971, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: -5299051916095222727, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: -3292800484116365187, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: -2900712077269430826, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: -2568721664359261378, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 766183730050063172, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
       propertyPath: m_Name
       value: Mancuerna HP (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 2797970754919319833, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 5418768494471476680, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 6232357572449348743, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 8523772855540137367, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 8585600779845878736, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
@@ -1139,9 +1843,57 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -4.9470215
       objectReference: {fileID: 0}
+    - target: {fileID: -6213753456980432971, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: -5299051916095222727, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: -3292800484116365187, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: -2900712077269430826, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: -2568721664359261378, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 766183730050063172, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
       propertyPath: m_Name
       value: Mancuerna HP (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 2797970754919319833, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 5418768494471476680, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 6232357572449348743, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 8523772855540137367, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 8585600779845878736, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
@@ -1213,9 +1965,57 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -6.6080017
       objectReference: {fileID: 0}
+    - target: {fileID: -6213753456980432971, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: -5299051916095222727, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: -3292800484116365187, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: -2900712077269430826, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: -2568721664359261378, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 766183730050063172, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
       propertyPath: m_Name
       value: Mancuerna HP (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 2797970754919319833, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 5418768494471476680, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 6232357572449348743, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 8523772855540137367, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 8585600779845878736, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
@@ -1287,9 +2087,57 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -4.9470215
       objectReference: {fileID: 0}
+    - target: {fileID: -6213753456980432971, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: -5299051916095222727, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: -3292800484116365187, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: -2900712077269430826, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: -2568721664359261378, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 766183730050063172, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
       propertyPath: m_Name
       value: Mancuerna HP (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 2797970754919319833, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 5418768494471476680, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 6232357572449348743, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 8523772855540137367, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 8585600779845878736, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
@@ -1361,9 +2209,57 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -6.6080017
       objectReference: {fileID: 0}
+    - target: {fileID: -6213753456980432971, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: -5299051916095222727, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: -3292800484116365187, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: -2900712077269430826, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: -2568721664359261378, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 766183730050063172, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
       propertyPath: m_Name
       value: Mancuerna HP (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 2797970754919319833, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 5418768494471476680, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 6232357572449348743, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 8523772855540137367, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 8585600779845878736, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
@@ -1435,9 +2331,57 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -4.9470215
       objectReference: {fileID: 0}
+    - target: {fileID: -6213753456980432971, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: -5299051916095222727, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: -3292800484116365187, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: -2900712077269430826, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: -2568721664359261378, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 766183730050063172, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
       propertyPath: m_Name
       value: Mancuerna HP (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 2797970754919319833, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 5418768494471476680, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 6232357572449348743, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 8523772855540137367, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 8585600779845878736, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
@@ -1509,9 +2453,57 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -4.9470215
       objectReference: {fileID: 0}
+    - target: {fileID: -6213753456980432971, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: -5299051916095222727, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: -3292800484116365187, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: -2900712077269430826, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: -2568721664359261378, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 766183730050063172, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
       propertyPath: m_Name
       value: Mancuerna HP (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 2797970754919319833, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 5418768494471476680, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 6232357572449348743, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 8523772855540137367, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 8585600779845878736, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
@@ -1583,9 +2575,57 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -6.6080017
       objectReference: {fileID: 0}
+    - target: {fileID: -6213753456980432971, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: -5299051916095222727, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: -3292800484116365187, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: -2900712077269430826, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: -2568721664359261378, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 766183730050063172, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
       propertyPath: m_Name
       value: Mancuerna HP (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 2797970754919319833, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 5418768494471476680, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 6232357572449348743, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 8523772855540137367, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 8585600779845878736, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f48062c34fe428d4789d397f7a66ff2a, type: 3}
