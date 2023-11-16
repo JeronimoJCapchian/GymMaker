@@ -109,8 +109,9 @@ public class PreviewSystem : MonoBehaviour
 
     bool pr;
 
-    private void Update() {
-        if(previewObject != null) pr = previewObject.GetComponent<TriggeringValidate>().validity;
+    private void Update()
+    {
+        if (previewObject != null) pr = previewObject.GetComponent<TriggeringValidate>().validity;
     }
 
     private void ApplyFeedbackToPreview(bool validity)
@@ -120,8 +121,9 @@ public class PreviewSystem : MonoBehaviour
 
     IEnumerator CO(bool validity)
     {
-        yield return new WaitForSeconds(0.05f);
-        Color c = validity ? Color.white : Color.red;
+        yield return new WaitForSeconds(0.025f);
+        Debug.Log(validity + " " + pr);
+        Color c = validity && pr ? Color.white : Color.red;
         c.a = 0.5f;
         cellIndicatorRenderer.material.color = c;
     }
@@ -133,7 +135,8 @@ public class PreviewSystem : MonoBehaviour
 
     IEnumerator CO2(bool validity)
     {
-        yield return new WaitForSeconds(0.05f);
+        yield return new WaitForSeconds(0.025f);
+        Debug.Log(validity + " " + pr);
         Color c = validity && pr ? Color.white : Color.red;
         c.a = 0.5f;
         cellIndicatorRenderer.material.color = c;
