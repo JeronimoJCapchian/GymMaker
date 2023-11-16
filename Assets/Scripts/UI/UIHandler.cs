@@ -27,7 +27,6 @@ public class UIHandler : MonoBehaviour
 
     //[SerializeField] Transform spawnPosition;
 
-
     private void OnEnable()
     {
         for (var i = 0; i < containers.transform.childCount; i++)
@@ -49,6 +48,8 @@ public class UIHandler : MonoBehaviour
     {
         gameManager = GameManager.instance;
         placementManager = gameManager.placementManager;
+
+        StateManager.Instance.AddOnAction(ChangeState);
     }
 
     #region  Container Region
@@ -65,6 +66,14 @@ public class UIHandler : MonoBehaviour
     }
 
     #endregion  Containers
+
+    public void ChangeState(bool value)
+    {
+        foreach (Panel panel in allPanels)
+        {
+            panel.ForceClosePanel(value);
+        }
+    }
 
     #region Buttons Region
 

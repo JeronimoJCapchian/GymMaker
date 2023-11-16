@@ -51,15 +51,15 @@ public class GridData
         }
     }
 
-    public bool CanPlaceObjectAt(Vector3Int gridPosition, Vector2Int objectSize)
+    public bool CanPlaceObjectAt(Vector3Int gridPosition, Vector2Int objectSize, bool val)
     {
         List<Vector3Int> positionToOccupy = CalculatePositions(gridPosition, objectSize);
         foreach (var pos in positionToOccupy)
         {
             if (placedMachines.ContainsKey(pos))
-                return false;
+                return false && val;
         }
-        return true;
+        return true && val;
     }
 }
 

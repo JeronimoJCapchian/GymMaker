@@ -83,7 +83,7 @@ public class PlacementState : IBuildingState, IObserver
 
         GridData selectedData = gridData;
 
-        return selectedData.CanPlaceObjectAt(gridPosition, database.machines[selectedObjectIndex].Size);
+        return selectedData.CanPlaceObjectAt(gridPosition, database.machines[selectedObjectIndex].Size, previewSystem.PreviewObject.GetComponent<TriggeringValidate>().validity);
     }
 
     public void UpdateState(Vector3Int gridPosition)

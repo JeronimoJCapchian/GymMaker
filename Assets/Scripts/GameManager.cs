@@ -15,6 +15,8 @@ public class GameManager : MonoBehaviour
 
     public ObjectDatabase objectDatabase;
 
+    bool canMove = true;
+
     private void Awake()
     {
         if (instance != null && instance != this)
@@ -22,13 +24,23 @@ public class GameManager : MonoBehaviour
         else
         {
             instance = this;
-            DontDestroyOnLoad(gameObject);
         }
+    }
+
+    private void Start() {
+        StateManager.Instance.AddOnAction(ChangeState);
+    }
+
+    void ChangeState(bool value)
+    {
+        canMove = !value;
     }
 
     // Ejecución de los controles
     void Update()
     {
+        if(!canMove) return;
+
         inputManager.HandleInputs();
         placementManager.ObtainMouseVariables();
     }

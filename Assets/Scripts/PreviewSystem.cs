@@ -9,6 +9,7 @@ public class PreviewSystem : MonoBehaviour
 
     [SerializeField] GameObject cellIndicator;
     [SerializeField] GameObject previewObject;
+    public GameObject PreviewObject => previewObject;
 
     [SerializeField] Material previewMaterialPrefab;
     Material previewMaterialInstance;
@@ -106,8 +107,20 @@ public class PreviewSystem : MonoBehaviour
 
     }
 
+    bool pr;
+
+    private void Update() {
+        if(previewObject != null) pr = previewObject.GetComponent<TriggeringValidate>().validity;
+    }
+
     private void ApplyFeedbackToPreview(bool validity)
     {
+        StartCoroutine(CO(validity));
+    }
+
+    IEnumerator CO(bool validity)
+    {
+        yield return new WaitForSeconds(0.05f);
         Color c = validity ? Color.white : Color.red;
         c.a = 0.5f;
         cellIndicatorRenderer.material.color = c;
@@ -115,7 +128,13 @@ public class PreviewSystem : MonoBehaviour
 
     private void ApplyFeedbackToCursor(bool validity)
     {
-        Color c = validity ? Color.white : Color.red;
+        StartCoroutine(CO2(validity));
+    }
+
+    IEnumerator CO2(bool validity)
+    {
+        yield return new WaitForSeconds(0.05f);
+        Color c = validity && pr ? Color.white : Color.red;
         c.a = 0.5f;
         cellIndicatorRenderer.material.color = c;
         previewMaterialInstance.color = c;

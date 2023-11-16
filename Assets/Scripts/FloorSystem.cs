@@ -6,16 +6,18 @@ public class FloorSystem : MonoBehaviour
 {
     [SerializeField] ObjectDatabase dataBase;
     [SerializeField] Renderer floorRenderer;
+    [SerializeField] Renderer wallRenderer;
     [SerializeField] int previewsIndex;
+    [SerializeField] int previewsEnum;
     [SerializeField] int selectedFloorIndex;
 
     private void Start() {
         previewsIndex = -1;
     }
 
-    public void ChangeFloor(int floorIndex)
+    public void ChangeFloor(int floorIndex, Panel.MeshToPaint mesh)
     {
-        if(floorIndex == previewsIndex)
+        if(floorIndex == previewsIndex && previewsEnum.Equals(mesh))
             return;
 
         selectedFloorIndex = dataBase.floors.FindIndex(data => data.ID == floorIndex);
@@ -25,8 +27,10 @@ public class FloorSystem : MonoBehaviour
             return;
         }
 
-        floorRenderer.material = dataBase.floors[floorIndex].Material;
+        if(mesh.Equals(Panel.MeshToPaint.Floor)) floorRenderer.material = dataBase.floors[floorIndex].Material;
+        else wallRenderer.material = dataBase.floors[floorIndex].Material;
         previewsIndex = floorIndex;
+        previewsEnum = (int)mesh;
 
         //gridVisualization.SetActive(true);
         // preview.StartShowingPlacementPreview(
