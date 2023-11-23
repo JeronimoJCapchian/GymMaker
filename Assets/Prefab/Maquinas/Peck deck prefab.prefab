@@ -29,6 +29,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3594560459881875450}
+  - {fileID: 4285951863574583293}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -433,4 +434,110 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 20110abf2c39247418b832c8aa73dfbe, type: 3}
   m_PrefabInstance: {fileID: 3920604258291015697}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7820946117502155957
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 8479038920859696949}
+    m_Modifications:
+    - target: {fileID: 6337505366257363784, guid: 56ed81addcbe2f44c860f1fe7a382f01, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6337505366257363784, guid: 56ed81addcbe2f44c860f1fe7a382f01, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.0860586
+      objectReference: {fileID: 0}
+    - target: {fileID: 6337505366257363784, guid: 56ed81addcbe2f44c860f1fe7a382f01, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.0860585
+      objectReference: {fileID: 0}
+    - target: {fileID: 6337505366257363784, guid: 56ed81addcbe2f44c860f1fe7a382f01, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.0860586
+      objectReference: {fileID: 0}
+    - target: {fileID: 6337505366257363784, guid: 56ed81addcbe2f44c860f1fe7a382f01, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.481
+      objectReference: {fileID: 0}
+    - target: {fileID: 6337505366257363784, guid: 56ed81addcbe2f44c860f1fe7a382f01, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.214
+      objectReference: {fileID: 0}
+    - target: {fileID: 6337505366257363784, guid: 56ed81addcbe2f44c860f1fe7a382f01, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 6337505366257363784, guid: 56ed81addcbe2f44c860f1fe7a382f01, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.6999409
+      objectReference: {fileID: 0}
+    - target: {fileID: 6337505366257363784, guid: 56ed81addcbe2f44c860f1fe7a382f01, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6337505366257363784, guid: 56ed81addcbe2f44c860f1fe7a382f01, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.7142008
+      objectReference: {fileID: 0}
+    - target: {fileID: 6337505366257363784, guid: 56ed81addcbe2f44c860f1fe7a382f01, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6337505366257363784, guid: 56ed81addcbe2f44c860f1fe7a382f01, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6337505366257363784, guid: 56ed81addcbe2f44c860f1fe7a382f01, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 91.155
+      objectReference: {fileID: 0}
+    - target: {fileID: 6337505366257363784, guid: 56ed81addcbe2f44c860f1fe7a382f01, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6337505366257363790, guid: 56ed81addcbe2f44c860f1fe7a382f01, type: 3}
+      propertyPath: m_Name
+      value: InfoDisplay3D
+      objectReference: {fileID: 0}
+    - target: {fileID: 6337505366296763184, guid: 56ed81addcbe2f44c860f1fe7a382f01, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: fa33d626e7d86ea48933b16e27cb8160, type: 3}
+    - target: {fileID: 6337505366804355737, guid: 56ed81addcbe2f44c860f1fe7a382f01, type: 3}
+      propertyPath: m_Alpha
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6337505367199147669, guid: 56ed81addcbe2f44c860f1fe7a382f01, type: 3}
+      propertyPath: m_Color.a
+      value: 0.83137256
+      objectReference: {fileID: 0}
+    - target: {fileID: 6337505367277913985, guid: 56ed81addcbe2f44c860f1fe7a382f01, type: 3}
+      propertyPath: m_text
+      value: "A pec deck is a machine designed to increase strength and muscle mass
+        in the chest. It\u2019s so effective that the American Council on Exercise
+        ranked it as one of the best exercises for building chest muscles. The pec
+        deck works both your chest and its supporting muscles, primarily your pectoralis
+        major, which is the muscle that allows you to swing and bring your arms together,
+        this strengthens your torso and stabilizes your shoulder blades. Meanwhile,
+        your supporting muscles, like the serratus anterior, are also activated during
+        a pec deck. It opens up and strengthens the backs of your shoulders to allow
+        you to complete the exercise.\r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6337505367277913985, guid: 56ed81addcbe2f44c860f1fe7a382f01, type: 3}
+      propertyPath: m_fontSize
+      value: 17.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 6337505367668506717, guid: 56ed81addcbe2f44c860f1fe7a382f01, type: 3}
+      propertyPath: m_text
+      value: "Pec Deck\r"
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 56ed81addcbe2f44c860f1fe7a382f01, type: 3}
+--- !u!4 &4285951863574583293 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6337505366257363784, guid: 56ed81addcbe2f44c860f1fe7a382f01, type: 3}
+  m_PrefabInstance: {fileID: 7820946117502155957}
   m_PrefabAsset: {fileID: 0}

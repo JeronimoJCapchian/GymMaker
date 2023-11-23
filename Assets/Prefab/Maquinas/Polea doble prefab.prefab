@@ -29,6 +29,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 468730571673182503}
+  - {fileID: 6883531919243291851}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -697,4 +698,112 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 4ea552a2c6a071a4cb18483d315751c1, type: 3}
   m_PrefabInstance: {fileID: 75429271363864268}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &609217689598674819
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 5428126406185501364}
+    m_Modifications:
+    - target: {fileID: 6337505366257363784, guid: 56ed81addcbe2f44c860f1fe7a382f01, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6337505366257363784, guid: 56ed81addcbe2f44c860f1fe7a382f01, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.0860586
+      objectReference: {fileID: 0}
+    - target: {fileID: 6337505366257363784, guid: 56ed81addcbe2f44c860f1fe7a382f01, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.0860585
+      objectReference: {fileID: 0}
+    - target: {fileID: 6337505366257363784, guid: 56ed81addcbe2f44c860f1fe7a382f01, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.0860586
+      objectReference: {fileID: 0}
+    - target: {fileID: 6337505366257363784, guid: 56ed81addcbe2f44c860f1fe7a382f01, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.353
+      objectReference: {fileID: 0}
+    - target: {fileID: 6337505366257363784, guid: 56ed81addcbe2f44c860f1fe7a382f01, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.275
+      objectReference: {fileID: 0}
+    - target: {fileID: 6337505366257363784, guid: 56ed81addcbe2f44c860f1fe7a382f01, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.101
+      objectReference: {fileID: 0}
+    - target: {fileID: 6337505366257363784, guid: 56ed81addcbe2f44c860f1fe7a382f01, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.6999414
+      objectReference: {fileID: 0}
+    - target: {fileID: 6337505366257363784, guid: 56ed81addcbe2f44c860f1fe7a382f01, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6337505366257363784, guid: 56ed81addcbe2f44c860f1fe7a382f01, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.7142004
+      objectReference: {fileID: 0}
+    - target: {fileID: 6337505366257363784, guid: 56ed81addcbe2f44c860f1fe7a382f01, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6337505366257363784, guid: 56ed81addcbe2f44c860f1fe7a382f01, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6337505366257363784, guid: 56ed81addcbe2f44c860f1fe7a382f01, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 91.155
+      objectReference: {fileID: 0}
+    - target: {fileID: 6337505366257363784, guid: 56ed81addcbe2f44c860f1fe7a382f01, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6337505366257363790, guid: 56ed81addcbe2f44c860f1fe7a382f01, type: 3}
+      propertyPath: m_Name
+      value: InfoDisplay3D
+      objectReference: {fileID: 0}
+    - target: {fileID: 6337505366296763184, guid: 56ed81addcbe2f44c860f1fe7a382f01, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: ec5b8b214b7e7764492f7d0ffe3f919f, type: 3}
+    - target: {fileID: 6337505366804355737, guid: 56ed81addcbe2f44c860f1fe7a382f01, type: 3}
+      propertyPath: m_Alpha
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6337505367199147669, guid: 56ed81addcbe2f44c860f1fe7a382f01, type: 3}
+      propertyPath: m_Color.a
+      value: 0.83137256
+      objectReference: {fileID: 0}
+    - target: {fileID: 6337505367277913985, guid: 56ed81addcbe2f44c860f1fe7a382f01, type: 3}
+      propertyPath: m_text
+      value: "A cable machine is a machine that uses a cable running through a system
+        of pulleys to lift weights. On one end of the cable, you have the handle/s
+        that you grip, and the other end is attached to a weight stack. Thanks to
+        the pulley system design, you can adjust the height of the cable machine,
+        allowing you to pull up, down, and outward. The weight stack makes it easy
+        to increase or decrease the amount of weight you lift as desired, and, because
+        there are so many handles and accessories available for the cable machine,
+        you\u2019ve got plenty of workout options to choose from.\n\rCable machines
+        will let you focus on a specific muscle or muscle group, but don\u2019t think
+        those are the only muscles doing the work, the rest of your muscles have
+        to engage to keep you balanced in whatever position you\u2019re working.\r\r    "
+      objectReference: {fileID: 0}
+    - target: {fileID: 6337505367277913985, guid: 56ed81addcbe2f44c860f1fe7a382f01, type: 3}
+      propertyPath: m_fontSize
+      value: 15.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6337505367668506717, guid: 56ed81addcbe2f44c860f1fe7a382f01, type: 3}
+      propertyPath: m_text
+      value: Cable Machine
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 56ed81addcbe2f44c860f1fe7a382f01, type: 3}
+--- !u!4 &6883531919243291851 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6337505366257363784, guid: 56ed81addcbe2f44c860f1fe7a382f01, type: 3}
+  m_PrefabInstance: {fileID: 609217689598674819}
   m_PrefabAsset: {fileID: 0}

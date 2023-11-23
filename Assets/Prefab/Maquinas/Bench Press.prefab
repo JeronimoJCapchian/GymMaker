@@ -42,6 +42,7 @@ Transform:
   - {fileID: 1724602013497957415}
   - {fileID: 2283698116266301538}
   - {fileID: 1643597289785124719}
+  - {fileID: 2335042734660908919}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1316,4 +1317,121 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 37848195563ffde47bc0cde6a812c9ec, type: 3}
   m_PrefabInstance: {fileID: 7847127996332702981}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8616770867482270783
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6960992489977480190}
+    m_Modifications:
+    - target: {fileID: 6337505365972187724, guid: 56ed81addcbe2f44c860f1fe7a382f01, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 6337505365972187724, guid: 56ed81addcbe2f44c860f1fe7a382f01, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 6337505366257363784, guid: 56ed81addcbe2f44c860f1fe7a382f01, type: 3}
+      propertyPath: m_RootOrder
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 6337505366257363784, guid: 56ed81addcbe2f44c860f1fe7a382f01, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.0860586
+      objectReference: {fileID: 0}
+    - target: {fileID: 6337505366257363784, guid: 56ed81addcbe2f44c860f1fe7a382f01, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.0860585
+      objectReference: {fileID: 0}
+    - target: {fileID: 6337505366257363784, guid: 56ed81addcbe2f44c860f1fe7a382f01, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.0860586
+      objectReference: {fileID: 0}
+    - target: {fileID: 6337505366257363784, guid: 56ed81addcbe2f44c860f1fe7a382f01, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.08
+      objectReference: {fileID: 0}
+    - target: {fileID: 6337505366257363784, guid: 56ed81addcbe2f44c860f1fe7a382f01, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.214
+      objectReference: {fileID: 0}
+    - target: {fileID: 6337505366257363784, guid: 56ed81addcbe2f44c860f1fe7a382f01, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.177
+      objectReference: {fileID: 0}
+    - target: {fileID: 6337505366257363784, guid: 56ed81addcbe2f44c860f1fe7a382f01, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.69986105
+      objectReference: {fileID: 0}
+    - target: {fileID: 6337505366257363784, guid: 56ed81addcbe2f44c860f1fe7a382f01, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6337505366257363784, guid: 56ed81addcbe2f44c860f1fe7a382f01, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.714279
+      objectReference: {fileID: 0}
+    - target: {fileID: 6337505366257363784, guid: 56ed81addcbe2f44c860f1fe7a382f01, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6337505366257363784, guid: 56ed81addcbe2f44c860f1fe7a382f01, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6337505366257363784, guid: 56ed81addcbe2f44c860f1fe7a382f01, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6337505366257363784, guid: 56ed81addcbe2f44c860f1fe7a382f01, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6337505366257363790, guid: 56ed81addcbe2f44c860f1fe7a382f01, type: 3}
+      propertyPath: m_Name
+      value: InfoDisplay3D
+      objectReference: {fileID: 0}
+    - target: {fileID: 6337505366296763184, guid: 56ed81addcbe2f44c860f1fe7a382f01, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 4e7ffb05d357aa945b0637305d2f3281, type: 3}
+    - target: {fileID: 6337505366804355737, guid: 56ed81addcbe2f44c860f1fe7a382f01, type: 3}
+      propertyPath: m_Alpha
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6337505367199147669, guid: 56ed81addcbe2f44c860f1fe7a382f01, type: 3}
+      propertyPath: m_Color.a
+      value: 0.83137256
+      objectReference: {fileID: 0}
+    - target: {fileID: 6337505367277913985, guid: 56ed81addcbe2f44c860f1fe7a382f01, type: 3}
+      propertyPath: m_text
+      value: "The bench press is a compound exercise that targets the muscles of
+        the upper body. It involves lying on a bench and pressing weight upward using
+        either a barbell or a pair of dumbbells. During a bench press, you lower
+        the weight down to chest level and then press upwards while extending your
+        arms. This movement is considered one repetition, or rep.\n\rThere are several
+        variations of bench presses that each work different muscles. These may involve
+        lying flat, lying at an incline or decline, or placing your hands closer
+        together on the barbell."
+      objectReference: {fileID: 0}
+    - target: {fileID: 6337505367277913985, guid: 56ed81addcbe2f44c860f1fe7a382f01, type: 3}
+      propertyPath: m_fontSize
+      value: 19
+      objectReference: {fileID: 0}
+    - target: {fileID: 6337505367668506717, guid: 56ed81addcbe2f44c860f1fe7a382f01, type: 3}
+      propertyPath: m_text
+      value: "Bench Press\r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6337505367991261293, guid: 56ed81addcbe2f44c860f1fe7a382f01, type: 3}
+      propertyPath: m_Alpha
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 56ed81addcbe2f44c860f1fe7a382f01, type: 3}
+--- !u!4 &2335042734660908919 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6337505366257363784, guid: 56ed81addcbe2f44c860f1fe7a382f01, type: 3}
+  m_PrefabInstance: {fileID: 8616770867482270783}
   m_PrefabAsset: {fileID: 0}
