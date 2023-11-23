@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5428126406185501364}
+  - component: {fileID: -2741558903857027802}
   m_Layer: 0
   m_Name: Polea doble prefab
   m_TagString: Untagged
@@ -33,6 +34,24 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &-2741558903857027802
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7514007781063891929}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f680c9458a6c0549903c8ced4b78274, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  validity: 1
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 64
+  rayLenghtForward: 0.75
+  rayLenghtRight: 2.5
 --- !u!1001 &75429271363864268
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -74,7 +93,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 4ea552a2c6a071a4cb18483d315751c1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.3511
+      value: 1.51
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 4ea552a2c6a071a4cb18483d315751c1, type: 3}
       propertyPath: m_LocalPosition.y
@@ -82,7 +101,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 4ea552a2c6a071a4cb18483d315751c1, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.31089997
+      value: 0.31
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 4ea552a2c6a071a4cb18483d315751c1, type: 3}
       propertyPath: m_LocalRotation.w

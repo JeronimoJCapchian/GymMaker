@@ -7,7 +7,7 @@ public class FloorButton : ItemButton
     public override void LoadButton()
     {
         base.LoadButton();
-        button.onClick.AddListener(() => GameManager.instance.floorSystem.ChangeFloor(itemIndex));
+        button.onClick.AddListener(() => GameManager.instance.floorSystem.ChangeFloor(itemIndex, Panel.meshToPaint));
     }
 
 

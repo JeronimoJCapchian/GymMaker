@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8479038920859696949}
+  - component: {fileID: -5534360999146602309}
   m_Layer: 0
   m_Name: Peck deck prefab
   m_TagString: Untagged
@@ -33,6 +34,24 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &-5534360999146602309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9094110546587098675}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f680c9458a6c0549903c8ced4b78274, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  validity: 1
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 64
+  rayLenghtForward: 0.75
+  rayLenghtRight: 1.5
 --- !u!1001 &3920604258291015697
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -58,7 +77,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 20110abf2c39247418b832c8aa73dfbe, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.6384001
+      value: 0.98
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 20110abf2c39247418b832c8aa73dfbe, type: 3}
       propertyPath: m_LocalPosition.y

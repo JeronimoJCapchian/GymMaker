@@ -14,14 +14,20 @@ public class Panel : MonoBehaviour
     [Header("Posiciones")]
     [SerializeField] Vector2 closeTransform;
     [SerializeField] Vector2 openTransform;
+    [SerializeField] Vector2 outScreenform;
+
     [Header("Variables")]
-    [Range(0.1f, 1f)] [SerializeField] float openDuration;
-    [Range(0.1f, 1f)] [SerializeField] float closeDuration;
+    [Range(0.1f, 1f)][SerializeField] float openDuration;
+    [Range(0.1f, 1f)][SerializeField] float closeDuration;
     [SerializeField] GameObject openGameObject;
     [SerializeField] GameObject closeGameObject;
     [SerializeField] Ease openEaseType;
     [SerializeField] Ease closeEaseType;
     [SerializeField] bool isOpen;
+
+    public enum MeshToPaint{ Floor, Walls }
+
+    public static MeshToPaint meshToPaint = 0;
 
     void Start()
     {
@@ -29,22 +35,35 @@ public class Panel : MonoBehaviour
         uIHandler = GetComponentInParent<UIHandler>();
     }
 
+    public void SetMeshToPaint(int mesh) => meshToPaint = (MeshToPaint)mesh;
+
     public void ChecksOtherPanels()
     {
-        if(!isOpen)
+        if (!isOpen)
         {
             foreach (var panel in uIHandler.allPanels)
             {
-                if(panel.isOpen)
-                    return;
+                if (panel.isOpen)
+                    panel.MovePanel();
             }
         }
         MovePanel();
     }
 
+    public void ForceClosePanel(bool value)
+    {
+        if (value) rectTransform.DOAnchorPos(outScreenform, openDuration).SetEase(closeEaseType).OnComplete(() =>
+        {
+            openGameObject.SetActive(true);
+            closeGameObject.SetActive(false);
+            isOpen = false;
+        });
+        else rectTransform.DOAnchorPos(closeTransform, openDuration).SetEase(closeEaseType);
+    }
+
     public void MovePanel()
     {
-        if(isOpen)
+        if (isOpen)
         {
             // Close
             rectTransform.DOAnchorPos(closeTransform, openDuration).SetEase(closeEaseType);

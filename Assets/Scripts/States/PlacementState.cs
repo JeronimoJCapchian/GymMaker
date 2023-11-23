@@ -56,7 +56,7 @@ public class PlacementState : IBuildingState, IObserver
     {
         
         bool placementValidity = CheckPlacementValidity(gridPosition, selectedObjectIndex);
-        if (placementValidity == false)
+        if (placementValidity == false || previewSystem.PreviewObject.GetComponent<TriggeringValidate>().validity == false)
             return;
 
         int index = objectPlacer.PlaceObject(database.machines[selectedObjectIndex].Prefab, grid.CellToWorld(gridPosition), previewSystem.isRotated);

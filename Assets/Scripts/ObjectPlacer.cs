@@ -10,6 +10,7 @@ public class ObjectPlacer : MonoBehaviour
     public int PlaceObject(GameObject prefab, Vector3 position, bool isRotated)
     {
         GameObject newObject = Instantiate(prefab);
+        Destroy(newObject.GetComponent<TriggeringValidate>());
         newObject.transform.position = position;
         if(isRotated)
             newObject.transform.eulerAngles = new(0f,90f,0f);
