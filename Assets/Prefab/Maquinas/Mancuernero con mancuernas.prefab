@@ -50,6 +50,7 @@ Transform:
   - {fileID: 7045596378910658271}
   - {fileID: 7045596378674867249}
   - {fileID: 7045596378284001518}
+  - {fileID: 1127360346612699696}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -212,6 +213,120 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 53e8134884d0cfb4297261f753b4f2bd, type: 3}
   m_PrefabInstance: {fileID: 728462867462559605}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6365389260820904312
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 7371343580872914120}
+    m_Modifications:
+    - target: {fileID: 6337505365972187724, guid: 56ed81addcbe2f44c860f1fe7a382f01, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 6337505365972187724, guid: 56ed81addcbe2f44c860f1fe7a382f01, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 6337505366257363784, guid: 56ed81addcbe2f44c860f1fe7a382f01, type: 3}
+      propertyPath: m_RootOrder
+      value: 21
+      objectReference: {fileID: 0}
+    - target: {fileID: 6337505366257363784, guid: 56ed81addcbe2f44c860f1fe7a382f01, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.0860586
+      objectReference: {fileID: 0}
+    - target: {fileID: 6337505366257363784, guid: 56ed81addcbe2f44c860f1fe7a382f01, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.0860585
+      objectReference: {fileID: 0}
+    - target: {fileID: 6337505366257363784, guid: 56ed81addcbe2f44c860f1fe7a382f01, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.0860586
+      objectReference: {fileID: 0}
+    - target: {fileID: 6337505366257363784, guid: 56ed81addcbe2f44c860f1fe7a382f01, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.08
+      objectReference: {fileID: 0}
+    - target: {fileID: 6337505366257363784, guid: 56ed81addcbe2f44c860f1fe7a382f01, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.214
+      objectReference: {fileID: 0}
+    - target: {fileID: 6337505366257363784, guid: 56ed81addcbe2f44c860f1fe7a382f01, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.177
+      objectReference: {fileID: 0}
+    - target: {fileID: 6337505366257363784, guid: 56ed81addcbe2f44c860f1fe7a382f01, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.69986105
+      objectReference: {fileID: 0}
+    - target: {fileID: 6337505366257363784, guid: 56ed81addcbe2f44c860f1fe7a382f01, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6337505366257363784, guid: 56ed81addcbe2f44c860f1fe7a382f01, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.714279
+      objectReference: {fileID: 0}
+    - target: {fileID: 6337505366257363784, guid: 56ed81addcbe2f44c860f1fe7a382f01, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6337505366257363784, guid: 56ed81addcbe2f44c860f1fe7a382f01, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6337505366257363784, guid: 56ed81addcbe2f44c860f1fe7a382f01, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6337505366257363784, guid: 56ed81addcbe2f44c860f1fe7a382f01, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6337505366257363790, guid: 56ed81addcbe2f44c860f1fe7a382f01, type: 3}
+      propertyPath: m_Name
+      value: InfoDisplay3D
+      objectReference: {fileID: 0}
+    - target: {fileID: 6337505366296763184, guid: 56ed81addcbe2f44c860f1fe7a382f01, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: d75053ddab93b6c4bb4b73caf3694600, type: 3}
+    - target: {fileID: 6337505366804355737, guid: 56ed81addcbe2f44c860f1fe7a382f01, type: 3}
+      propertyPath: m_Alpha
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6337505367199147669, guid: 56ed81addcbe2f44c860f1fe7a382f01, type: 3}
+      propertyPath: m_Color.a
+      value: 0.83137256
+      objectReference: {fileID: 0}
+    - target: {fileID: 6337505367277913985, guid: 56ed81addcbe2f44c860f1fe7a382f01, type: 3}
+      propertyPath: m_text
+      value: Dumbbells stand as the most essential bit of gym equipment unmatched
+        in their versatility. Whether you need to isolate different muscle groups
+        or use them for compound exercises. Whether your fitness journey involves
+        hypertrophy, strength training, or cardio workouts, dumbbells are the go-to
+        choice.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6337505367277913985, guid: 56ed81addcbe2f44c860f1fe7a382f01, type: 3}
+      propertyPath: m_fontSize
+      value: 24.95
+      objectReference: {fileID: 0}
+    - target: {fileID: 6337505367668506717, guid: 56ed81addcbe2f44c860f1fe7a382f01, type: 3}
+      propertyPath: m_text
+      value: Dumbbells
+      objectReference: {fileID: 0}
+    - target: {fileID: 6337505367991261293, guid: 56ed81addcbe2f44c860f1fe7a382f01, type: 3}
+      propertyPath: m_Alpha
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 56ed81addcbe2f44c860f1fe7a382f01, type: 3}
+--- !u!4 &1127360346612699696 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6337505366257363784, guid: 56ed81addcbe2f44c860f1fe7a382f01, type: 3}
+  m_PrefabInstance: {fileID: 6365389260820904312}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &7371343580822247743
 PrefabInstance:
