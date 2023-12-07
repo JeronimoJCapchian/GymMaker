@@ -84,26 +84,12 @@ public class PreviewSystem : MonoBehaviour
 
     public void RotateObject()
     {
-        Debug.Log("Roto Roto");
+        if (previewObject.GetComponent<TriggeringValidate>() == null) return;
+
         var previousSize = cellIndicator.transform.localScale;
         cellIndicator.transform.localScale = new(previousSize.z, 1, previousSize.x);
 
-        if (previewObject.transform.eulerAngles != Vector3.zero)
-        {
-            Debug.Log("No roto");
-            previewObject.transform.eulerAngles = Vector3.zero;
-            previewObject.transform.position = new(previewObject.transform.position.x,
-                                                   previewObject.transform.position.y,
-                                                   previewObject.transform.position.z - 1);
-        }
-        else
-        {
-            Debug.Log("Si roto");
-            previewObject.transform.Rotate(new(0f, 90f, 0f));
-            previewObject.transform.position = new(previewObject.transform.position.x,
-                                                   previewObject.transform.position.y,
-                                                   previewObject.transform.position.z + 1);
-        }
+        previewObject.GetComponent<TriggeringValidate>().RotateCenter();
 
     }
 
@@ -122,7 +108,6 @@ public class PreviewSystem : MonoBehaviour
     IEnumerator CO(bool validity)
     {
         yield return new WaitForSeconds(0.025f);
-        Debug.Log(validity + " " + pr);
         Color c = validity && pr ? Color.white : Color.red;
         c.a = 0.5f;
         cellIndicatorRenderer.material.color = c;
@@ -136,7 +121,6 @@ public class PreviewSystem : MonoBehaviour
     IEnumerator CO2(bool validity)
     {
         yield return new WaitForSeconds(0.025f);
-        Debug.Log(validity + " " + pr);
         Color c = validity && pr ? Color.white : Color.red;
         c.a = 0.5f;
         cellIndicatorRenderer.material.color = c;

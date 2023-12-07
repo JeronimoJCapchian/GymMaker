@@ -7,13 +7,14 @@ public class ObjectPlacer : MonoBehaviour
 {
     [SerializeField] private List<GameObject> placedGameObject = new();
 
-    public int PlaceObject(GameObject prefab, Vector3 position, bool isRotated)
+    public int PlaceObject(GameObject prefab, Vector3 position, Vector3 pos, Vector3 rot)
     {
         GameObject newObject = Instantiate(prefab);
         Destroy(newObject.GetComponent<TriggeringValidate>());
         newObject.transform.position = position;
-        if(isRotated)
-            newObject.transform.eulerAngles = new(0f,90f,0f);
+        newObject.transform.GetChild(0).position = pos;
+        newObject.transform.GetChild(0).eulerAngles = rot;
+            
         placedGameObject.Add(newObject);
         return placedGameObject.Count - 1;
     }

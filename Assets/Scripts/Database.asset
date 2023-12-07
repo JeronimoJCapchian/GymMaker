@@ -15,67 +15,67 @@ MonoBehaviour:
   machines:
   - <Name>k__BackingField: Mancuernas
     <ID>k__BackingField: 0
-    <Size>k__BackingField: {x: 3, y: 1}
+    Size: {x: 3, y: 1}
     <Icon>k__BackingField: {fileID: 21300000, guid: de5dd1250e0f14443860c0ac84dd071c, type: 3}
     <Prefab>k__BackingField: {fileID: 7371343580872914121, guid: 0499f06eb8ce76440b58cce945f27877, type: 3}
     <Type>k__BackingField: 3
   - <Name>k__BackingField: Cinta
     <ID>k__BackingField: 1
-    <Size>k__BackingField: {x: 1, y: 2}
+    Size: {x: 1, y: 2}
     <Icon>k__BackingField: {fileID: 21300000, guid: 18abb87b76d40c74da41b75ef15d9a98, type: 3}
     <Prefab>k__BackingField: {fileID: 8062155424252216921, guid: c05c928623582784382f02b97afd6939, type: 3}
     <Type>k__BackingField: 4
   - <Name>k__BackingField: Bench Press
     <ID>k__BackingField: 2
-    <Size>k__BackingField: {x: 2, y: 2}
+    Size: {x: 2, y: 2}
     <Icon>k__BackingField: {fileID: 21300000, guid: 605ebdf4342515b40ae3224a465e72cc, type: 3}
     <Prefab>k__BackingField: {fileID: 6521013969810980438, guid: ba96522740b505f42a93427d30a8c3d9, type: 3}
     <Type>k__BackingField: 0
   - <Name>k__BackingField: Bicicleta
     <ID>k__BackingField: 3
-    <Size>k__BackingField: {x: 1, y: 1}
+    Size: {x: 1, y: 1}
     <Icon>k__BackingField: {fileID: 21300000, guid: 29d43268b475f604a981c1a333dc60af, type: 3}
     <Prefab>k__BackingField: {fileID: 6199116768757601279, guid: b09b6516e8d69424e90a8d68fd6a92d5, type: 3}
     <Type>k__BackingField: 4
   - <Name>k__BackingField: Sillon de cuadriceps
     <ID>k__BackingField: 4
-    <Size>k__BackingField: {x: 1, y: 2}
+    Size: {x: 1, y: 2}
     <Icon>k__BackingField: {fileID: 21300000, guid: 34e333fb3a3cd1c40a1242c2c347db3c, type: 3}
     <Prefab>k__BackingField: {fileID: 674180595386949146, guid: 92231cfa4346b0b45bf3feb2e9ea0b36, type: 3}
     <Type>k__BackingField: 2
   - <Name>k__BackingField: Prensa
     <ID>k__BackingField: 5
-    <Size>k__BackingField: {x: 1, y: 2}
+    Size: {x: 1, y: 2}
     <Icon>k__BackingField: {fileID: 21300000, guid: 19f91d1eebdf65d4b881c340ea85a632, type: 3}
     <Prefab>k__BackingField: {fileID: 1149513960234712834, guid: 053a35c31c3a27e4cb62272e56334549, type: 3}
     <Type>k__BackingField: 2
   - <Name>k__BackingField: Polea doble
     <ID>k__BackingField: 6
-    <Size>k__BackingField: {x: 3, y: 1}
+    Size: {x: 3, y: 1}
     <Icon>k__BackingField: {fileID: 21300000, guid: d5ae3f2f83c1bec4e97bcf094515af45, type: 3}
     <Prefab>k__BackingField: {fileID: 7514007781063891929, guid: 14e1a58a05e48d840b524fd8bd9e72cf, type: 3}
     <Type>k__BackingField: 0
   - <Name>k__BackingField: Peck Deck
     <ID>k__BackingField: 7
-    <Size>k__BackingField: {x: 2, y: 1}
+    Size: {x: 2, y: 1}
     <Icon>k__BackingField: {fileID: 21300000, guid: 60e5edabf8b00c64ab25817245839f12, type: 3}
     <Prefab>k__BackingField: {fileID: 9094110546587098675, guid: 11d818875cf9090458e5afc299d97d97, type: 3}
     <Type>k__BackingField: 0
   - <Name>k__BackingField: Mancuerna1
     <ID>k__BackingField: 8
-    <Size>k__BackingField: {x: 1, y: 1}
+    Size: {x: 1, y: 1}
     <Icon>k__BackingField: {fileID: 21300000, guid: 60e5edabf8b00c64ab25817245839f12, type: 3}
     <Prefab>k__BackingField: {fileID: 626037040291138695, guid: da46a4ec029efbc4e9c4459b0dc9595f, type: 3}
     <Type>k__BackingField: 3
   - <Name>k__BackingField: Mancuerna2
     <ID>k__BackingField: 9
-    <Size>k__BackingField: {x: 1, y: 1}
+    Size: {x: 1, y: 1}
     <Icon>k__BackingField: {fileID: 21300000, guid: 60e5edabf8b00c64ab25817245839f12, type: 3}
     <Prefab>k__BackingField: {fileID: 626037040291138695, guid: a2f4d901600ecd24ab0e3f1e242c100a, type: 3}
     <Type>k__BackingField: 3
   - <Name>k__BackingField: Mancuerna3
     <ID>k__BackingField: 10
-    <Size>k__BackingField: {x: 1, y: 1}
+    Size: {x: 1, y: 1}
     <Icon>k__BackingField: {fileID: 21300000, guid: 60e5edabf8b00c64ab25817245839f12, type: 3}
     <Prefab>k__BackingField: {fileID: 626037040291138695, guid: 17fc6195b3aa6ae4eb0ec06624139a9a, type: 3}
     <Type>k__BackingField: 3
