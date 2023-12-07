@@ -7,11 +7,11 @@ public class LevelManager : MonoBehaviour
 {
     private void Start()
     {
-        UIBackgroundFader.Instance.FadeOut(0.5f);
+        UIBackgroundFader.Instance.FadeOut(0.75f);
     }
 
     public void OnChangeScene(string sceneName)
     {
-        UIBackgroundFader.Instance.FadeIn(0.5f, ()=> SceneManager.LoadScene(sceneName));
+        UIBackgroundFader.Instance.FadeIn(0.75f, ()=> SceneManager.LoadScene(sceneName));
     }
 }

@@ -1,0 +1,87 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5124966f79263543a60f468983321ee, type: 3}
+  m_Name: Move
+  m_EditorClassIdentifier: 
+  showOverlay:
+    desktopAsUniversal: 0
+    desktop: 1
+    mobile: 0
+  key:
+    m_Name: Key
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: fcfd4cdb-8dbf-4d0c-abb3-4bd7114fdfd4
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: Move
+      m_Id: d0137c53-9c60-4261-9abb-dfd65b3f9b6a
+      m_Path: 2DVector
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Key
+      m_Flags: 4
+    - m_Name: up
+      m_Id: 9155e03c-3dd4-4ec5-8405-f96d915b2c86
+      m_Path: <Keyboard>/w
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Key
+      m_Flags: 8
+    - m_Name: down
+      m_Id: 91191b73-2e33-49e2-ac5c-30fc258743f6
+      m_Path: <Keyboard>/s
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Key
+      m_Flags: 8
+    - m_Name: left
+      m_Id: 48b361e5-7c04-4804-ace6-274ba52ad4cd
+      m_Path: <Keyboard>/a
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Key
+      m_Flags: 8
+    - m_Name: right
+      m_Id: 8c7b20c9-1e0e-47fe-9d2a-0c4726713a1d
+      m_Path: <Keyboard>/d
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Key
+      m_Flags: 8
+    - m_Name: 
+      m_Id: 4c30a42b-9b4f-41ba-94f1-0bdae708102b
+      m_Path: <Gamepad>/leftStick/down
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Key
+      m_Flags: 0
+  thresholdToPress: 0.5
+  icon:
+    desktopAsUniversal: 1
+    desktop: {fileID: 21300000, guid: 49a2a460f101f614c819b49201a3977e, type: 3}
+    mobile: {fileID: 0}
+  title:
+    desktopAsUniversal: 1
+    desktop: Move
+    mobile: 
+  description:
+    desktopAsUniversal: 0
+    desktop: Use your WASD keys
+    mobile: Tap and drag the left side
