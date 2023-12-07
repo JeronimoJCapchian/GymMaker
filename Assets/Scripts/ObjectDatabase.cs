@@ -18,7 +18,7 @@ public class Machine
     [field: SerializeField]
     public int ID { get; private set; }
     [field: SerializeField]
-    public Vector2Int Size { get; private set; } = Vector2Int.one;
+    public Vector2Int Size = Vector2Int.one;
     [field: SerializeField]
     public Sprite Icon { get; private set; }
     [field: SerializeField]

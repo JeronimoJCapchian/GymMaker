@@ -28,7 +28,7 @@ public class RotatingState : IBuildingState
         this.objectPlacer = objectPlacer;
     }
 
-    public void OnAction(Vector3Int gridPosition)
+    public void OnAction(Vector3Int gridPosition, Quaternion gridRot)
     {
         
     }

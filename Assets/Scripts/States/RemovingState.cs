@@ -29,7 +29,7 @@ public class RemovingState : IBuildingState
         previewSystem.StopShowingPreview();
     }
 
-    public void OnAction(Vector3Int gridPosition)
+    public void OnAction(Vector3Int gridPosition, Quaternion gridRot)
     {
         GridData selectedData = null;
         if (!gridData.CanPlaceObjectAt(gridPosition, Vector2Int.one))

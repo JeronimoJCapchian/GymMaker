@@ -12,6 +12,8 @@ public class PlacementState : IBuildingState, IObserver
     GridData gridData;
     ObjectPlacer objectPlacer;
 
+    Vector2Int originSize;
+
     public PlacementState(int iD,
                           Grid grid,
                           PreviewSystem previewSystem,
@@ -39,11 +41,15 @@ public class PlacementState : IBuildingState, IObserver
 
         GameManager.instance.inputManager.Subscribe(this);
         previewSystem.isRotated = false;
+
+        originSize = database.machines[selectedObjectIndex].Size;
     }
 
     public void EndeState()
     {
         previewSystem.StopShowingPreview();
+        GameManager.instance.inputManager.UnSubscribe(this);
+        database.machines[selectedObjectIndex].Size = originSize;
         previewSystem.isRotated = false;
     }
 
@@ -52,14 +58,17 @@ public class PlacementState : IBuildingState, IObserver
         GameManager.instance.inputManager.UnSubscribe(this);
     }
 
-    public void OnAction(Vector3Int gridPosition)
+    public void OnAction(Vector3Int gridPosition, Quaternion gridRot)
     {
-        
+
         bool placementValidity = CheckPlacementValidity(gridPosition, selectedObjectIndex);
         if (placementValidity == false || previewSystem.PreviewObject.GetComponent<TriggeringValidate>().validity == false)
             return;
 
-        int index = objectPlacer.PlaceObject(database.machines[selectedObjectIndex].Prefab, grid.CellToWorld(gridPosition), previewSystem.isRotated);
+        int index = objectPlacer.PlaceObject(database.machines[selectedObjectIndex].Prefab,
+        previewSystem.PreviewObject.transform.position,
+        previewSystem.PreviewObject.transform.GetChild(0).position,
+        previewSystem.PreviewObject.transform.GetChild(0).eulerAngles);
 
         GridData selectedData = gridData;
 
@@ -95,8 +104,15 @@ public class PlacementState : IBuildingState, IObserver
 
     public void Notify(IObservable observable)
     {
-        Debug.Log("Roto");
         previewSystem.RotateObject();
-        
+        ChangeSize();
+    }
+
+    void ChangeSize()
+    {
+        var x = database.machines[selectedObjectIndex].Size.x;
+
+        database.machines[selectedObjectIndex].Size.x = database.machines[selectedObjectIndex].Size.y;
+        database.machines[selectedObjectIndex].Size.y = x;
     }
 }
