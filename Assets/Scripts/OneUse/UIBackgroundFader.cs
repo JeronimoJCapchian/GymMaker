@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine.UI;
 using UnityEngine;
 using DG.Tweening;
+using System;
 
 public class UIBackgroundFader : MonoBehaviour
 {
@@ -20,13 +21,9 @@ public class UIBackgroundFader : MonoBehaviour
         else Destroy(this.gameObject);
     }
 
-    private void Start() {
-        FadeOut(0.5f);
-    }
-
-    public void FadeIn(float timer)
+    public void FadeIn(float timer, Action callback)
     {
-        background.DOFade(1, timer).SetEase(easeType);
+        background.DOFade(1, timer).SetEase(easeType).OnComplete(() => callback?.Invoke());
     }
 
     public void FadeOut(float timer)
