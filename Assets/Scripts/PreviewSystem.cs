@@ -97,7 +97,11 @@ public class PreviewSystem : MonoBehaviour
 
     private void Update()
     {
-        if (previewObject != null) pr = previewObject.GetComponent<TriggeringValidate>().validity;
+        if (PreviewObject != null)
+        {
+            Debug.Log(PreviewObject);
+            pr = PreviewObject.GetComponent<TriggeringValidate>().validity;
+        }
     }
 
     private void ApplyFeedbackToPreview(bool validity)
