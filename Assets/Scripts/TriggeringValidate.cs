@@ -48,6 +48,8 @@ public class TriggeringValidate : MonoBehaviour
 
     private void OnDrawGizmos()
     {
+        if(centerTransform == null) return;
+        
         Debug.DrawRay(centerTransform.position, transform.forward * rayLenghtForward, Color.red);
         Debug.DrawRay(centerTransform.position, transform.right * rayLenghtRight, Color.red);
         Debug.DrawRay(centerTransform.position, -transform.forward * rayLenghtForward, Color.red);

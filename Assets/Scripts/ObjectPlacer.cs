@@ -11,6 +11,7 @@ public class ObjectPlacer : MonoBehaviour
     {
         GameObject newObject = Instantiate(prefab);
         Destroy(newObject.GetComponent<TriggeringValidate>());
+        StateManager.Instance.AddBoxCollider(newObject.GetComponentInChildren<BoxCollider>());
         newObject.transform.position = position;
         newObject.transform.GetChild(0).position = pos;
         newObject.transform.GetChild(0).eulerAngles = rot;
@@ -24,6 +25,8 @@ public class ObjectPlacer : MonoBehaviour
         if (placedGameObject.Count <= gameObjectIndex
             || placedGameObject[gameObjectIndex] == null)
             return;
+
+        StateManager.Instance.RemoveBoxCollider(placedGameObject[gameObjectIndex].GetComponentInChildren<BoxCollider>());
         Destroy(placedGameObject[gameObjectIndex]);
         placedGameObject[gameObjectIndex] = null;
     }

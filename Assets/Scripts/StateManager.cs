@@ -15,6 +15,8 @@ public class StateManager : MonoBehaviour
     [SerializeField] UnityEvent onEditModeOn;
     [SerializeField] UnityEvent onEditModeOff;
 
+    List<BoxCollider> colliders =new List<BoxCollider>();
+
     private void Awake() {
         if(Instance == null) Instance = this;
     }
@@ -32,5 +34,23 @@ public class StateManager : MonoBehaviour
     public void AddOnAction(Action<bool> action)
     {
         changeState += action;
+    }
+
+    public void AddBoxCollider(BoxCollider x)
+    {
+        colliders.Add(x);
+    }
+
+    public void RemoveBoxCollider(BoxCollider x)
+    {
+        colliders.Remove(x);
+    }
+
+    public void EnableDisable(bool value)
+    {
+        foreach (var item in colliders)
+        {
+            item.enabled = value;
+        }
     }
 }
