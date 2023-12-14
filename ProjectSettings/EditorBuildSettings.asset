@@ -6,8 +6,14 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Main Menu.unity
+    guid: 3b0e58c55f6e67445aa779e0216bd0ed
+  - enabled: 1
     path: Assets/Scenes/GymSelector.unity
     guid: 16d0212dc7e43714caa53f8bbe39ada7
+  - enabled: 1
+    path: Assets/Scenes/FranScene.unity
+    guid: af5b90453bdb8b649a4c1f698172ea61
   - enabled: 1
     path: Assets/Scenes/Gyms/Gym 2.unity
     guid: bbfa851408f507744be440dfcea2a6b1
