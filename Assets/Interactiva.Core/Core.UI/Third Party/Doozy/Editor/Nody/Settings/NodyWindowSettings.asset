@@ -9,7 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2219bf6f41194122bb8719d6ccb29f01, type: 3}
+  m_Script: {fileID: 11500000, guid: d1ea7f77b464d4c4686a52c992be881d, type: 3}
   m_Name: NodyWindowSettings
   m_EditorClassIdentifier: 
   DotAnimationCurve:
@@ -36,29 +36,19 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  CurrentGraph: {fileID: 11400000, guid: 181f5842f5a738e439ff518bf38be971, type: 2}
-  RecentlyOpenedGraphs:
-  - {fileID: 11400000, guid: 181f5842f5a738e439ff518bf38be971, type: 2}
-  - {fileID: 11400000, guid: 589a86f00ca3075498df9acb09275b28, type: 2}
+  CurrentGraph: {fileID: 0}
+  RecentlyOpenedGraphs: []
   CopiedNodes: []
   DeletedNodes: []
-  SelectedNodes:
-  - {fileID: -8125079675191393726, guid: 181f5842f5a738e439ff518bf38be971, type: 2}
-  GraphTabs:
-  - IsRootTab: 1
-    Graph: {fileID: 11400000, guid: 181f5842f5a738e439ff518bf38be971, type: 2}
-    SubGraphNode: {fileID: 0}
-    Zoom: 0.6
-    PanOffset: {x: 402.1, y: 255.59999}
-    SelectedNodes: []
-    DeletedNodes: []
-  CurrentView: 1
-  CurrentPanOffset: {x: 427.33548, y: 218.81703}
+  SelectedNodes: []
+  GraphTabs: []
+  CurrentView: 0
+  CurrentPanOffset: {x: 0, y: 0}
   DefaultPanOffset: {x: 0, y: 0}
   IsDirty: 0
   SaveCurrentGraphWithControlS: 1
   CurrentDotAnimationSpeed: 0.6
-  CurrentZoom: 0.9
+  CurrentZoom: 1
   DefaultDotAnimationSpeed: 0.6
   DefaultZoom: 1
   ShowNodeNotes: 1

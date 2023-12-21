@@ -9,10 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1a7a3342e0e97ab42a866320557a91c3, type: 3}
+  m_Script: {fileID: 11500000, guid: 458937c598b16224081ee75587a0951f, type: 3}
   m_Name: UIDrawerSettings
   m_EditorClassIdentifier: 
-  database: {fileID: 11400000, guid: b91b5cfa504dc2849987cf34fb136865, type: 2}
+  database: {fileID: 0}
   CloseDirection: 1
   CustomStartAnchoredPosition: {x: 0, y: 0, z: 0}
   BlockBackButton: 1

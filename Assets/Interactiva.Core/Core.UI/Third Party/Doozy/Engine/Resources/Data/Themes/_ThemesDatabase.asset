@@ -9,10 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e2fe5daa01734ec7b0f40070937b8b1f, type: 3}
+  m_Script: {fileID: 11500000, guid: 8cfc4eaa2691f034e93daff0cdcf5f80, type: 3}
   m_Name: _ThemesDatabase
   m_EditorClassIdentifier: 
   ThemesNames:
   - General
   Themes:
-  - {fileID: 11400000, guid: a109393700527e644bdd926e52dad992, type: 2}
+  - {fileID: 11400000, guid: 528390be36a4b41469a5337f478c0604, type: 2}

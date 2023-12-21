@@ -9,16 +9,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 42dff178cdcfb1740a46c868a9902c1e, type: 3}
+  m_Script: {fileID: 11500000, guid: 8d75733e6c3ecfd47b4294aa12e30716, type: 3}
   m_Name: Uncategorized
   m_EditorClassIdentifier: 
   AnimationNames:
   - Default
   Database:
-  - {fileID: 7988192929403742068}
+  - {fileID: 1311232688822335441}
   DatabaseName: Uncategorized
   DataType: 5
---- !u!114 &7988192929403742068
+--- !u!114 &1311232688822335441
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -27,7 +27,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe5b16c60b843134eb75c4ba6a7b6f52, type: 3}
+  m_Script: {fileID: 11500000, guid: a09d943f3e7a59e4594ae6de37e77097, type: 3}
   m_Name: Default
   m_EditorClassIdentifier: 
   Animation:

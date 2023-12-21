@@ -9,10 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e613985aa83548b88a79c1663775dcbe, type: 3}
+  m_Script: {fileID: 11500000, guid: 7fe4b8f1c19aa56459d81af23e4e953b, type: 3}
   m_Name: UIButtonSettings
   m_EditorClassIdentifier: 
-  database: {fileID: 11400000, guid: 4929f9f252e529940a1b804bd2419fd1, type: 2}
+  database: {fileID: 0}
   InputMode: 2
   KeyCode: 13
   KeyCodeAlt: 32

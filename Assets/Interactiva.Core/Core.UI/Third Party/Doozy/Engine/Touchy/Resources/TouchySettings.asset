@@ -9,7 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: db9c8a0a3069472081a88b8e51088130, type: 3}
+  m_Script: {fileID: 11500000, guid: d87fe201f6de3354ba88dee9939105a5, type: 3}
   m_Name: TouchySettings
   m_EditorClassIdentifier: 
   LongTapDuration: 0.4

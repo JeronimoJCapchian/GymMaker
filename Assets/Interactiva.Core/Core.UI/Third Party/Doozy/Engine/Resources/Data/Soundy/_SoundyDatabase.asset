@@ -9,12 +9,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d4c2d9ce944146ff90950f0f03051619, type: 3}
+  m_Script: {fileID: 11500000, guid: 43ba449c271804242bed539e87ea660e, type: 3}
   m_Name: _SoundyDatabase
   m_EditorClassIdentifier: 
   DatabaseNames:
-  - General
-  - In-game
+  - 
+  - 
   SoundDatabases:
-  - {fileID: 11400000, guid: 7bddcb043bfd74147a2b82a372631e45, type: 2}
-  - {fileID: 11400000, guid: 8be5709b5bdf93246a35b8d2dff5db14, type: 2}
+  - {fileID: 0}
+  - {fileID: 11400000, guid: fb7534f85b5e95a4dbaae553281430a7, type: 2}

@@ -9,10 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4320b6044dba483bb727836a541819cb, type: 3}
+  m_Script: {fileID: 11500000, guid: 15c6c03c92c887d4fa7c2f3c9c92e481, type: 3}
   m_Name: UIPopupSettings
   m_EditorClassIdentifier: 
-  database: {fileID: 11400000, guid: 2fbabdf0f47a8e9419be7908e3161a7b, type: 2}
+  database: {fileID: 0}
   DisplayTarget: 0
   AddToPopupQueue: 1
   AutoHideAfterShow: 0
