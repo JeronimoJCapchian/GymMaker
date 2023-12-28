@@ -6,6 +6,7 @@ using UnityEngine;
 public class ObjectPlacer : MonoBehaviour
 {
     [SerializeField] private List<GameObject> placedGameObject = new();
+  
 
     public int PlaceObject(GameObject prefab, Vector3 position, Vector3 pos, Vector3 rot)
     {
@@ -26,7 +27,7 @@ public class ObjectPlacer : MonoBehaviour
             || placedGameObject[gameObjectIndex] == null)
             return;
 
-        StateManager.Instance.RemoveBoxCollider(placedGameObject[gameObjectIndex].GetComponentInChildren<BoxCollider>());
+        StateManager.Instance.RemoveBoxCollider(placedGameObject[gameObjectIndex].GetComponentInChildren<BoxCollider>());        
         Destroy(placedGameObject[gameObjectIndex]);
         placedGameObject[gameObjectIndex] = null;
     }
