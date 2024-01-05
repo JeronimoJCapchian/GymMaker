@@ -480,14 +480,6 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
---- !u!222 &506897334
-CanvasRenderer:
-  m_ObjectHideFlags: 8
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_CullTransparentMesh: 1
 --- !u!1 &517736469
 GameObject:
   m_ObjectHideFlags: 0
@@ -648,6 +640,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26fc1288f608ee54da6568942b278960, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DebugMode: 0
+  StartPosition: {x: 0, y: 0, z: 0}
+  StartRotation: {x: 0, y: 0, z: 0}
+  StartScale: {x: 1, y: 1, z: 1}
+  StartAlpha: 1
+  CanvasName: Unnamed
+  CustomCanvasName: 1
+  DontDestroyCanvasOnLoad: 0
 --- !u!114 &586101859
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1879,6 +1879,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e48078339a843a349b18d2ffa26d526e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inputMode: 0
+  navigators: []
+  lockCursor: 1
+  onFreeze:
+    m_PersistentCalls:
+      m_Calls: []
+  onUnfreeze:
+    m_PersistentCalls:
+      m_Calls: []
+  androidSensitivity: 1
+  IOSSensitivity: 1
+  desktopSensitivity: 1
 --- !u!4 &1269843034
 Transform:
   m_ObjectHideFlags: 0
@@ -2699,6 +2711,102 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05ec5cf00ca181d45a42ba1870e148c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_minSensitivity: 0.25
+  m_maxSensitivity: 2
+  onEnable:
+    m_PersistentCalls:
+      m_Calls: []
+  onDisable:
+    m_PersistentCalls:
+      m_Calls: []
+  m_WalkSpeed: 0
+  m_RunSpeed: 0
+  m_RunstepLenghten: 0
+  m_JumpSpeed: 0
+  m_StickToGroundForce: 0
+  m_GravityMultiplier: 0
+  m_MouseLook:
+    clampVerticalRotation: 1
+    MinimumX: -90
+    MaximumX: 90
+    smooth: 0
+    smoothTime: 5
+  m_UseFovKick: 0
+  m_FovKick:
+    Camera: {fileID: 0}
+    originalFov: 0
+    FOVIncrease: 3
+    TimeToIncrease: 1
+    TimeToDecrease: 1
+    IncreaseCurve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+  m_UseHeadBob: 0
+  m_HeadBob:
+    HorizontalBobRange: 0.33
+    VerticalBobRange: 0.33
+    Bobcurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 0.5
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1.5
+        value: -1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 2
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    VerticaltoHorizontalRatio: 1
+  m_JumpBob:
+    BobDuration: 0
+    BobAmount: 0
+  m_StepInterval: 0
+  m_FootstepSounds: []
+  m_JumpSound: {fileID: 0}
+  m_LandSound: {fileID: 0}
 --- !u!114 &1605619996
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2711,6 +2819,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2bb8a6833486d3e4c9fd546aaf1abb4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  distanceToFocus: 2
+  angleToFocus: 60
+  promptAction:
+    desktopAsUniversal: 0
+    desktop: 'Press ''Space'' to '
+    mobile: 'Tap to '
+  onPromptInteract:
+    m_PersistentCalls:
+      m_Calls: []
+  onStopPromptInteract:
+    m_PersistentCalls:
+      m_Calls: []
+  navigator: {fileID: 0}
+  promptUI: {fileID: 0}
 --- !u!1 &1705277815
 GameObject:
   m_ObjectHideFlags: 0
@@ -2934,6 +3056,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: View - Misc - Interact Prompt
       objectReference: {fileID: 0}
+    - target: {fileID: 1240456438558403478, guid: 9376fc61a7103434bb2ff68d0fc16caf, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1240456438558403479, guid: 9376fc61a7103434bb2ff68d0fc16caf, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -3101,7 +3227,7 @@ PrefabInstance:
       objectReference: {fileID: 1590971611}
     - target: {fileID: 1711366742403060338, guid: ad492988b66910d4eac4aa3a444b164e, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 41.610455
+      value: 41.61082
       objectReference: {fileID: 0}
     - target: {fileID: 1711366742948077340, guid: ad492988b66910d4eac4aa3a444b164e, type: 3}
       propertyPath: sceneCamera
