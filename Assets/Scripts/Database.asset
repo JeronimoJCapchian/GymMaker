@@ -64,19 +64,19 @@ MonoBehaviour:
   - <Name>k__BackingField: Mancuerna1
     <ID>k__BackingField: 8
     Size: {x: 1, y: 1}
-    <Icon>k__BackingField: {fileID: 21300000, guid: 60e5edabf8b00c64ab25817245839f12, type: 3}
+    <Icon>k__BackingField: {fileID: 21300000, guid: ec78421a8c0a56f4e9a85e771b2f01a3, type: 3}
     <Prefab>k__BackingField: {fileID: 626037040291138695, guid: da46a4ec029efbc4e9c4459b0dc9595f, type: 3}
     <Type>k__BackingField: 3
   - <Name>k__BackingField: Mancuerna2
     <ID>k__BackingField: 9
     Size: {x: 1, y: 1}
-    <Icon>k__BackingField: {fileID: 21300000, guid: 60e5edabf8b00c64ab25817245839f12, type: 3}
+    <Icon>k__BackingField: {fileID: 21300000, guid: 50f30e4e6fa064145a1af6d33772f64f, type: 3}
     <Prefab>k__BackingField: {fileID: 626037040291138695, guid: a2f4d901600ecd24ab0e3f1e242c100a, type: 3}
     <Type>k__BackingField: 3
   - <Name>k__BackingField: Mancuerna3
     <ID>k__BackingField: 10
     Size: {x: 1, y: 1}
-    <Icon>k__BackingField: {fileID: 21300000, guid: 60e5edabf8b00c64ab25817245839f12, type: 3}
+    <Icon>k__BackingField: {fileID: 21300000, guid: acf62db1e2927e6409069a7e8145dc9a, type: 3}
     <Prefab>k__BackingField: {fileID: 626037040291138695, guid: 17fc6195b3aa6ae4eb0ec06624139a9a, type: 3}
     <Type>k__BackingField: 3
   floors:
