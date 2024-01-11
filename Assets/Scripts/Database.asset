@@ -80,11 +80,27 @@ MonoBehaviour:
     <Prefab>k__BackingField: {fileID: 626037040291138695, guid: 17fc6195b3aa6ae4eb0ec06624139a9a, type: 3}
     <Type>k__BackingField: 3
   floors:
-  - <Name>k__BackingField: Madera
+  - <Name>k__BackingField: Wood
     <ID>k__BackingField: 0
-    <Icon>k__BackingField: {fileID: 0}
+    <Icon>k__BackingField: {fileID: 21300000, guid: 4adfaa95a45add842a616f64b28450a0, type: 3}
     <Material>k__BackingField: {fileID: 2100000, guid: 4a1fb3460a759674486c10e4e4fb38de, type: 2}
-  - <Name>k__BackingField: Madera
+  - <Name>k__BackingField: Concret
     <ID>k__BackingField: 1
-    <Icon>k__BackingField: {fileID: 0}
-    <Material>k__BackingField: {fileID: 2100000, guid: b9c86758a916b2a40bf38513182a0ec3, type: 2}
+    <Icon>k__BackingField: {fileID: 21300000, guid: 98f526019d1b8b84bb2f19c7bc1fb93f, type: 3}
+    <Material>k__BackingField: {fileID: 2100000, guid: 69f73bfa93259904f8e275d6b97520d8, type: 2}
+  - <Name>k__BackingField: Dark Concret
+    <ID>k__BackingField: 2
+    <Icon>k__BackingField: {fileID: 21300000, guid: 32706a59b2b65e2428aed5a457ab152d, type: 3}
+    <Material>k__BackingField: {fileID: 2100000, guid: 4f305e2c59a2fac439c3a594769517f8, type: 2}
+  - <Name>k__BackingField: White Wall
+    <ID>k__BackingField: 3
+    <Icon>k__BackingField: {fileID: 21300000, guid: 31e90c3b834a85542915383470a9dd3f, type: 3}
+    <Material>k__BackingField: {fileID: 2100000, guid: 572e37d057765b7408c82141e900ca5f, type: 2}
+  - <Name>k__BackingField: Carpet
+    <ID>k__BackingField: 4
+    <Icon>k__BackingField: {fileID: 21300000, guid: 7362c200b11c7ce46a58a1ba6ecb8a70, type: 3}
+    <Material>k__BackingField: {fileID: 2100000, guid: 8d27130db84bef849acd846d4ce162c7, type: 2}
+  - <Name>k__BackingField: Pointed
+    <ID>k__BackingField: 5
+    <Icon>k__BackingField: {fileID: 21300000, guid: e67a09c005db8cc42995ff26f5eb54fa, type: 3}
+    <Material>k__BackingField: {fileID: 2100000, guid: 4a3cc593a236eb447a8c4b3fd24a1c35, type: 2}
