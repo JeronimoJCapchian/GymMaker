@@ -63,7 +63,11 @@ public class PlacementState : IBuildingState, IObserver
 
         bool placementValidity = CheckPlacementValidity(gridPosition, selectedObjectIndex);
         if (placementValidity == false || previewSystem.PreviewObject.GetComponent<TriggeringValidate>().validity == false)
+        {
+            AudioSoundManager.Instance.PlaySound(2);
             return;
+        }
+            
 
         int index = objectPlacer.PlaceObject(database.machines[selectedObjectIndex].Prefab,
         previewSystem.PreviewObject.transform.position,
@@ -82,6 +86,8 @@ public class PlacementState : IBuildingState, IObserver
             index);
 
         previewSystem.UpdatePosition(grid.CellToWorld(gridPosition), false);
+
+        AudioSoundManager.Instance.PlaySound(0);
     }
 
     private bool CheckPlacementValidity(Vector3Int gridPosition, int selectedObjectIndex)

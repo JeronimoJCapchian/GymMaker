@@ -25,6 +25,9 @@ public class Panel : MonoBehaviour
     [SerializeField] Ease closeEaseType;
     [SerializeField] bool isOpen;
 
+    [SerializeField] AudioSource audioS;
+    [SerializeField] AudioClip[] clips;
+
     public enum MeshToPaint{ Floor, Walls }
 
     public static MeshToPaint meshToPaint = 0;
@@ -70,6 +73,9 @@ public class Panel : MonoBehaviour
             openGameObject.SetActive(true);
             closeGameObject.SetActive(false);
             isOpen = false;
+
+            audioS.clip = clips[1];
+            audioS.Play();
         }
         else
         {
@@ -78,6 +84,9 @@ public class Panel : MonoBehaviour
             openGameObject.SetActive(false);
             closeGameObject.SetActive(true);
             isOpen = true;
+
+            audioS.clip = clips[0];
+            audioS.Play();
         }
     }
 }

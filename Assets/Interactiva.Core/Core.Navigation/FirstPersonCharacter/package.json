@@ -1,0 +1,8 @@
+{
+	"name" : "com.interactiva-studios.firstperson",
+	"version" : "1.0",
+	"displayName" : "First Person Character",
+	"description" : "The Interactiva First Person Character and associated scripts. Requires the Input System package to be installed.",
+	"unity" : "2019.4",
+	"keywords" : ["interactiva", "firstpersoncharacter"]
+}
