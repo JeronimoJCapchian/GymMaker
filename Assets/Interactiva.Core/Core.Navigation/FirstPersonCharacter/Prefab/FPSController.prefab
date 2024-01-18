@@ -29,6 +29,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 58.64531, y: 17.28, z: 19.930838}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4573193490576466536}
   m_RootOrder: 0
@@ -97,6 +98,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0.8, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6205627011402236604}
   m_RootOrder: 1
@@ -126,8 +128,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4573193490576466537}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.79999924, z: 0}
+  m_LocalPosition: {x: 0, y: 0.8, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4573193489560322016}
   m_Father: {fileID: 6205627011402236604}
@@ -154,12 +157,15 @@ MonoBehaviour:
   m_LookAt: {fileID: 0}
   m_Follow: {fileID: 4573193489893545371}
   m_Lens:
-    FieldOfView: 60
+    FieldOfView: 40
     OrthographicSize: 10
     NearClipPlane: 0.1
     FarClipPlane: 5000
     Dutch: 0
+    ModeOverride: 0
     LensShift: {x: 0, y: 0}
+    GateFit: 2
+    m_SensorSize: {x: 1, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -199,6 +205,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -58.64531, y: -18.08, z: -19.930838}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4573193490576466536}
   - {fileID: 4573193489893545371}
@@ -475,9 +482,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2bb8a6833486d3e4c9fd546aaf1abb4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  camTransitionTime: 1
   distanceToFocus: 4
   angleToFocus: 60
+  promptAction:
+    desktopAsUniversal: 0
+    desktop: 'Press ''Space'' to '
+    mobile: 'Tap to '
   onPromptInteract:
     m_PersistentCalls:
       m_Calls: []
@@ -485,4 +495,4 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   navigator: {fileID: 6205627011408915324}
-  interacting: 0
+  promptUI: {fileID: 0}
