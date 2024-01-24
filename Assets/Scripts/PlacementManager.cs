@@ -79,7 +79,7 @@ public class PlacementManager : MonoBehaviour
         Vector3 mousePosition = inputManager.GetSelectedMapPosition();
         Vector3Int gridPosition = grid.WorldToCell(mousePosition);
 
-        buildingState.OnAction(gridPosition, Quaternion.identity);
+       buildingState.OnAction(gridPosition, Quaternion.identity);
     }
 
     // private bool CheckPlacementValidity(Vector3Int gridPosition, int selectedObjectIndex)
