@@ -39,7 +39,7 @@ public class GameManager : MonoBehaviour
     // Ejecución de los controles
     void Update()
     {
-        if(!canMove) return;
+        if(!canMove || PauseMenuCanvas.Instance.isOpen) return;
 
         inputManager.HandleInputs();
         placementManager.ObtainMouseVariables();
