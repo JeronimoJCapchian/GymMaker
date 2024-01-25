@@ -7884,6 +7884,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5526496290177848509, guid: 71de444ed1136754f81105dfae055519, type: 3}
+      propertyPath: m_AdditionalShaderChannelsFlag
+      value: 25
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 71de444ed1136754f81105dfae055519, type: 3}
 --- !u!1 &1598376414 stripped
@@ -8846,7 +8850,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 2249334836c99fd4b904709d2854cb64, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b702aade8cd77d944a986883017e61e0, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

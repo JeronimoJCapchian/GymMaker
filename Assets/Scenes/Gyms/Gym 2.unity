@@ -1201,7 +1201,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 69f73bfa93259904f8e275d6b97520d8, type: 2}
+  - {fileID: 2100000, guid: 6e4030b01cfa99848aa0e4fe8a68eb39, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2437,7 +2437,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!108 &1302460636
 Light:
   m_ObjectHideFlags: 0
@@ -2487,7 +2487,7 @@ Light:
   m_RenderMode: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 128
   m_RenderingLayerMask: 1
   m_Lightmapping: 4
   m_LightShadowCasterMode: 0
@@ -2851,7 +2851,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 69f73bfa93259904f8e275d6b97520d8, type: 2}
+  - {fileID: 2100000, guid: 4a1fb3460a759674486c10e4e4fb38de, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3227,7 +3227,7 @@ Camera:
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 351
+    m_Bits: 479
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -4341,7 +4341,7 @@ PrefabInstance:
       objectReference: {fileID: 1590971611}
     - target: {fileID: 1711366742403060338, guid: ad492988b66910d4eac4aa3a444b164e, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 42.414467
+      value: 41.610004
       objectReference: {fileID: 0}
     - target: {fileID: 1711366742403060339, guid: ad492988b66910d4eac4aa3a444b164e, type: 3}
       propertyPath: m_Spacing
