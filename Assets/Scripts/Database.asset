@@ -87,11 +87,11 @@ MonoBehaviour:
   - <Name>k__BackingField: Concret
     <ID>k__BackingField: 1
     <Icon>k__BackingField: {fileID: 21300000, guid: 98f526019d1b8b84bb2f19c7bc1fb93f, type: 3}
-    <Material>k__BackingField: {fileID: 2100000, guid: 69f73bfa93259904f8e275d6b97520d8, type: 2}
+    <Material>k__BackingField: {fileID: 2100000, guid: 4f305e2c59a2fac439c3a594769517f8, type: 2}
   - <Name>k__BackingField: Dark Concret
     <ID>k__BackingField: 2
     <Icon>k__BackingField: {fileID: 21300000, guid: 32706a59b2b65e2428aed5a457ab152d, type: 3}
-    <Material>k__BackingField: {fileID: 2100000, guid: 4f305e2c59a2fac439c3a594769517f8, type: 2}
+    <Material>k__BackingField: {fileID: 2100000, guid: 6e4030b01cfa99848aa0e4fe8a68eb39, type: 2}
   - <Name>k__BackingField: White Wall
     <ID>k__BackingField: 3
     <Icon>k__BackingField: {fileID: 21300000, guid: 31e90c3b834a85542915383470a9dd3f, type: 3}
