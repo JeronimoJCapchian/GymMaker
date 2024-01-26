@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7039799947107891086}
   - component: {fileID: 1155916110691003127}
   - component: {fileID: 1734968377271867205}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: pCube2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ GameObject:
   - component: {fileID: 8771150556152360594}
   - component: {fileID: 4885477633061458361}
   - component: {fileID: 7015562002042049261}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: pCube4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -177,7 +177,7 @@ GameObject:
   - component: {fileID: 1977024306254242507}
   - component: {fileID: 8934375295636807389}
   - component: {fileID: 7077797000244681991}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: pCube1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -258,7 +258,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5656201494016996237}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Lampara
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -300,7 +300,7 @@ GameObject:
   - component: {fileID: 5328994448453848564}
   - component: {fileID: 5328994448453848563}
   - component: {fileID: 5328994448453848562}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Area Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -415,7 +415,7 @@ GameObject:
   - component: {fileID: 3779722280910183293}
   - component: {fileID: 5475127368896222373}
   - component: {fileID: 1733341890442958864}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: pCube5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -498,7 +498,7 @@ GameObject:
   - component: {fileID: 109859314835533276}
   - component: {fileID: 2259726900711344793}
   - component: {fileID: 3741491178833885594}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: pCylinder2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -581,7 +581,7 @@ GameObject:
   - component: {fileID: 1740806432046096300}
   - component: {fileID: 7985252715438353015}
   - component: {fileID: 6463926767644031223}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: pCube3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -664,7 +664,7 @@ GameObject:
   - component: {fileID: 4741715227190998543}
   - component: {fileID: 5997788811856087135}
   - component: {fileID: 8685817373113203555}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: pCylinder1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -747,7 +747,7 @@ GameObject:
   - component: {fileID: 6170737951402549997}
   - component: {fileID: 3689014928763708852}
   - component: {fileID: 12721731408114202}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: pPlane1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
