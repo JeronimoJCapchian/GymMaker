@@ -28,7 +28,7 @@ public class Panel : MonoBehaviour
     [SerializeField] AudioSource audioS;
     [SerializeField] AudioClip[] clips;
 
-    public enum MeshToPaint{ Floor, Walls }
+    public enum MeshToPaint{ Floor, Walls, Roof }
 
     public static MeshToPaint meshToPaint = 0;
 

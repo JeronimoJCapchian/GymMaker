@@ -1047,7 +1047,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh55542
+  m_Name: pb_Mesh84200
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -1449,7 +1449,7 @@ PrefabInstance:
     - target: {fileID: 1699494185447152230, guid: ad492988b66910d4eac4aa3a444b164e, type: 3}
       propertyPath: m_TargetGraphic
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 522170808}
     - target: {fileID: 1699494185447152230, guid: ad492988b66910d4eac4aa3a444b164e, type: 3}
       propertyPath: m_Colors.m_SelectedColor.b
       value: 0.8595505
@@ -1465,10 +1465,14 @@ PrefabInstance:
     - target: {fileID: 1699494185447152230, guid: ad492988b66910d4eac4aa3a444b164e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
+      objectReference: {fileID: 522170807}
+    - target: {fileID: 1699494185447152230, guid: ad492988b66910d4eac4aa3a444b164e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetMeshToPaint
       objectReference: {fileID: 0}
     - target: {fileID: 1699494185447152230, guid: ad492988b66910d4eac4aa3a444b164e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1711366741788922520, guid: ad492988b66910d4eac4aa3a444b164e, type: 3}
       propertyPath: m_AnchorMax.x
@@ -1534,6 +1538,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1711366742284039983, guid: ad492988b66910d4eac4aa3a444b164e, type: 3}
+      propertyPath: roofRenderer
+      value: 
+      objectReference: {fileID: 887779662}
     - target: {fileID: 1711366742284039983, guid: ad492988b66910d4eac4aa3a444b164e, type: 3}
       propertyPath: wallRenderer
       value: 
@@ -1774,10 +1782,38 @@ PrefabInstance:
       propertyPath: m_AnchorMin.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2673789844058188993, guid: ad492988b66910d4eac4aa3a444b164e, type: 3}
+      propertyPath: m_TargetGraphic
+      value: 
+      objectReference: {fileID: 349079069}
+    - target: {fileID: 2673789844058188993, guid: ad492988b66910d4eac4aa3a444b164e, type: 3}
+      propertyPath: m_Colors.m_SelectedColor.b
+      value: 0.8595505
+      objectReference: {fileID: 0}
+    - target: {fileID: 2673789844058188993, guid: ad492988b66910d4eac4aa3a444b164e, type: 3}
+      propertyPath: m_Colors.m_SelectedColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2673789844058188993, guid: ad492988b66910d4eac4aa3a444b164e, type: 3}
+      propertyPath: m_Colors.m_SelectedColor.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2673789844058188993, guid: ad492988b66910d4eac4aa3a444b164e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 522170807}
+    - target: {fileID: 2673789844058188993, guid: ad492988b66910d4eac4aa3a444b164e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetMeshToPaint
+      objectReference: {fileID: 0}
+    - target: {fileID: 2673789844058188993, guid: ad492988b66910d4eac4aa3a444b164e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 3161996562870817437, guid: ad492988b66910d4eac4aa3a444b164e, type: 3}
       propertyPath: m_TargetGraphic
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 522170809}
     - target: {fileID: 3161996562870817437, guid: ad492988b66910d4eac4aa3a444b164e, type: 3}
       propertyPath: m_Colors.m_SelectedColor.b
       value: 0.8595505
@@ -1793,6 +1829,78 @@ PrefabInstance:
     - target: {fileID: 3161996562870817437, guid: ad492988b66910d4eac4aa3a444b164e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
+      objectReference: {fileID: 522170807}
+    - target: {fileID: 3161996562870817437, guid: ad492988b66910d4eac4aa3a444b164e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetMeshToPaint
+      objectReference: {fileID: 0}
+    - target: {fileID: 3789023991446657240, guid: ad492988b66910d4eac4aa3a444b164e, type: 3}
+      propertyPath: m_text
+      value: Floor
+      objectReference: {fileID: 0}
+    - target: {fileID: 3789023991446657240, guid: ad492988b66910d4eac4aa3a444b164e, type: 3}
+      propertyPath: m_fontSize
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 3789023991446657240, guid: ad492988b66910d4eac4aa3a444b164e, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: d2528718cf26e6d4a98a7d08d74cc04d, type: 2}
+    - target: {fileID: 3789023991446657240, guid: ad492988b66910d4eac4aa3a444b164e, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 3789023991446657240, guid: ad492988b66910d4eac4aa3a444b164e, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 2903284796087852126, guid: d2528718cf26e6d4a98a7d08d74cc04d, type: 2}
+    - target: {fileID: 3789023991446657240, guid: ad492988b66910d4eac4aa3a444b164e, type: 3}
+      propertyPath: m_enableAutoSizing
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5505160272450974854, guid: ad492988b66910d4eac4aa3a444b164e, type: 3}
+      propertyPath: m_text
+      value: Roof
+      objectReference: {fileID: 0}
+    - target: {fileID: 5505160272450974854, guid: ad492988b66910d4eac4aa3a444b164e, type: 3}
+      propertyPath: m_fontSize
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 5505160272450974854, guid: ad492988b66910d4eac4aa3a444b164e, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: d2528718cf26e6d4a98a7d08d74cc04d, type: 2}
+    - target: {fileID: 5505160272450974854, guid: ad492988b66910d4eac4aa3a444b164e, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 5505160272450974854, guid: ad492988b66910d4eac4aa3a444b164e, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 2903284796087852126, guid: d2528718cf26e6d4a98a7d08d74cc04d, type: 2}
+    - target: {fileID: 5505160272450974854, guid: ad492988b66910d4eac4aa3a444b164e, type: 3}
+      propertyPath: m_enableAutoSizing
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6775146428673754181, guid: ad492988b66910d4eac4aa3a444b164e, type: 3}
+      propertyPath: m_fontSize
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 6775146428673754181, guid: ad492988b66910d4eac4aa3a444b164e, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: d2528718cf26e6d4a98a7d08d74cc04d, type: 2}
+    - target: {fileID: 6775146428673754181, guid: ad492988b66910d4eac4aa3a444b164e, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 6775146428673754181, guid: ad492988b66910d4eac4aa3a444b164e, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 2903284796087852126, guid: d2528718cf26e6d4a98a7d08d74cc04d, type: 2}
+    - target: {fileID: 6775146428673754181, guid: ad492988b66910d4eac4aa3a444b164e, type: 3}
+      propertyPath: m_enableAutoSizing
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad492988b66910d4eac4aa3a444b164e, type: 3}
@@ -1919,6 +2027,17 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &349079069 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1201129562960943174, guid: ad492988b66910d4eac4aa3a444b164e, type: 3}
+  m_PrefabInstance: {fileID: 349079064}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &433238338
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2067,7 +2186,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 69f73bfa93259904f8e275d6b97520d8, type: 2}
+  - {fileID: 2100000, guid: 4a1fb3460a759674486c10e4e4fb38de, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2389,6 +2508,39 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!114 &522170807 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1711366743395438294, guid: ad492988b66910d4eac4aa3a444b164e, type: 3}
+  m_PrefabInstance: {fileID: 349079064}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7600d12974e136f43a23c283b7747e27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &522170808 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4738988668220438965, guid: ad492988b66910d4eac4aa3a444b164e, type: 3}
+  m_PrefabInstance: {fileID: 349079064}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &522170809 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8820984156936429711, guid: ad492988b66910d4eac4aa3a444b164e, type: 3}
+  m_PrefabInstance: {fileID: 349079064}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &537105365
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4277,7 +4429,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 572e37d057765b7408c82141e900ca5f, type: 2}
+  - {fileID: 2100000, guid: 6e4030b01cfa99848aa0e4fe8a68eb39, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
