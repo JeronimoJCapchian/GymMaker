@@ -13,7 +13,7 @@ public class ObjectPlacer : MonoBehaviour
         GameObject newObject = Instantiate(prefab);
         Destroy(newObject.GetComponent<TriggeringValidate>());
         StateManager.Instance.AddBoxCollider(newObject.GetComponentInChildren<BoxCollider>());
-        newObject.tag = "Default";
+        newObject.layer = 7;
         newObject.transform.position = position;
         newObject.transform.GetChild(0).position = pos;
         newObject.transform.GetChild(0).eulerAngles = rot;

@@ -8186,6 +8186,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5526496290177848509, guid: 71de444ed1136754f81105dfae055519, type: 3}
+      propertyPath: m_SortingOrder
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 5526496290177848509, guid: 71de444ed1136754f81105dfae055519, type: 3}
       propertyPath: m_AdditionalShaderChannelsFlag
       value: 25
       objectReference: {fileID: 0}
@@ -9254,6 +9258,38 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 743899736, guid: ee05637a6c6e89f4c8b6c52f259d153b, type: 3}
+      propertyPath: xAudio
+      value: 
+      objectReference: {fileID: 1477080890}
+    - target: {fileID: 743899736, guid: ee05637a6c6e89f4c8b6c52f259d153b, type: 3}
+      propertyPath: xMusic
+      value: 
+      objectReference: {fileID: 541170417}
+    - target: {fileID: 743899736, guid: ee05637a6c6e89f4c8b6c52f259d153b, type: 3}
+      propertyPath: onOpenMenu.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 743899736, guid: ee05637a6c6e89f4c8b6c52f259d153b, type: 3}
+      propertyPath: onCloseMenu.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 743899736, guid: ee05637a6c6e89f4c8b6c52f259d153b, type: 3}
+      propertyPath: onOpenMenu.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetCursorCanLock
+      objectReference: {fileID: 0}
+    - target: {fileID: 743899736, guid: ee05637a6c6e89f4c8b6c52f259d153b, type: 3}
+      propertyPath: onCloseMenu.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetCursorCanLock
+      objectReference: {fileID: 0}
+    - target: {fileID: 743899736, guid: ee05637a6c6e89f4c8b6c52f259d153b, type: 3}
+      propertyPath: onOpenMenu.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 743899736, guid: ee05637a6c6e89f4c8b6c52f259d153b, type: 3}
+      propertyPath: onCloseMenu.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9213793365850435888, guid: ee05637a6c6e89f4c8b6c52f259d153b, type: 3}
       propertyPath: m_Pivot.x
       value: 0

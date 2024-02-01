@@ -1028,6 +1028,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isOpen: 0
+  xAudio: {fileID: 694349168}
+  xMusic: {fileID: 1390781314}
   onOpenMenu:
     m_PersistentCalls:
       m_Calls:

@@ -731,6 +731,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2092195868688146114}
     m_Modifications:
+    - target: {fileID: 6337505365972187715, guid: 56ed81addcbe2f44c860f1fe7a382f01, type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 6337505366257363784, guid: 56ed81addcbe2f44c860f1fe7a382f01, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -803,9 +807,21 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: b0f18174dc14fb04cb0a441113b14d6e, type: 3}
+    - target: {fileID: 6337505366296763190, guid: 56ed81addcbe2f44c860f1fe7a382f01, type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 6337505366804355737, guid: 56ed81addcbe2f44c860f1fe7a382f01, type: 3}
       propertyPath: m_Alpha
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6337505366804355743, guid: 56ed81addcbe2f44c860f1fe7a382f01, type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6337505367199147659, guid: 56ed81addcbe2f44c860f1fe7a382f01, type: 3}
+      propertyPath: m_Layer
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6337505367199147669, guid: 56ed81addcbe2f44c860f1fe7a382f01, type: 3}
       propertyPath: m_Color.a
@@ -823,9 +839,29 @@ PrefabInstance:
       propertyPath: m_fontSize
       value: 23.55
       objectReference: {fileID: 0}
+    - target: {fileID: 6337505367277913991, guid: 56ed81addcbe2f44c860f1fe7a382f01, type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6337505367460922659, guid: 56ed81addcbe2f44c860f1fe7a382f01, type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6337505367668506707, guid: 56ed81addcbe2f44c860f1fe7a382f01, type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 6337505367668506717, guid: 56ed81addcbe2f44c860f1fe7a382f01, type: 3}
       propertyPath: m_text
       value: Leg Extensions
+      objectReference: {fileID: 0}
+    - target: {fileID: 6337505367758095099, guid: 56ed81addcbe2f44c860f1fe7a382f01, type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6337505367991261283, guid: 56ed81addcbe2f44c860f1fe7a382f01, type: 3}
+      propertyPath: m_Layer
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 56ed81addcbe2f44c860f1fe7a382f01, type: 3}

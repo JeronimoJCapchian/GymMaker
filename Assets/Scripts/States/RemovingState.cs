@@ -48,12 +48,12 @@ public class RemovingState : IBuildingState
                 return;
             selectedData.RemoveObjectAt(gridPosition);
             objectPlacer.RemoveObjectAt(gameObjectIndex);
+
+            AudioSoundManager.Instance.PlaySound(1);
         }
         Vector3 cellPosition = grid.CellToWorld(gridPosition);
         //previewSystem.UpdatePosition(cellPosition, false);
         previewSystem.UpdatePosition(cellPosition, CheckIfSelectionIsValid(gridPosition));
-
-        AudioSoundManager.Instance.PlaySound(1);
     }
 
     //Necesario si se cuenta con mas de un tipo de maquina a la vez

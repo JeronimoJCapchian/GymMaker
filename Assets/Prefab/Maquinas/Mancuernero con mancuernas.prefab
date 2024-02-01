@@ -335,6 +335,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1210029958464513162}
     m_Modifications:
+    - target: {fileID: 6337505365972187715, guid: 56ed81addcbe2f44c860f1fe7a382f01, type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 6337505365972187724, guid: 56ed81addcbe2f44c860f1fe7a382f01, type: 3}
       propertyPath: m_SizeDelta.x
       value: 100
@@ -415,9 +419,21 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: d75053ddab93b6c4bb4b73caf3694600, type: 3}
+    - target: {fileID: 6337505366296763190, guid: 56ed81addcbe2f44c860f1fe7a382f01, type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 6337505366804355737, guid: 56ed81addcbe2f44c860f1fe7a382f01, type: 3}
       propertyPath: m_Alpha
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6337505366804355743, guid: 56ed81addcbe2f44c860f1fe7a382f01, type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6337505367199147659, guid: 56ed81addcbe2f44c860f1fe7a382f01, type: 3}
+      propertyPath: m_Layer
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6337505367199147669, guid: 56ed81addcbe2f44c860f1fe7a382f01, type: 3}
       propertyPath: m_Color.a
@@ -435,9 +451,29 @@ PrefabInstance:
       propertyPath: m_fontSize
       value: 24.95
       objectReference: {fileID: 0}
+    - target: {fileID: 6337505367277913991, guid: 56ed81addcbe2f44c860f1fe7a382f01, type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6337505367460922659, guid: 56ed81addcbe2f44c860f1fe7a382f01, type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6337505367668506707, guid: 56ed81addcbe2f44c860f1fe7a382f01, type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 6337505367668506717, guid: 56ed81addcbe2f44c860f1fe7a382f01, type: 3}
       propertyPath: m_text
       value: Dumbbells
+      objectReference: {fileID: 0}
+    - target: {fileID: 6337505367758095099, guid: 56ed81addcbe2f44c860f1fe7a382f01, type: 3}
+      propertyPath: m_Layer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6337505367991261283, guid: 56ed81addcbe2f44c860f1fe7a382f01, type: 3}
+      propertyPath: m_Layer
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6337505367991261293, guid: 56ed81addcbe2f44c860f1fe7a382f01, type: 3}
       propertyPath: m_Alpha

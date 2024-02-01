@@ -14,6 +14,9 @@ public class PauseMenuCanvas : MonoBehaviour
 
     Transform content;
 
+    public GameObject xAudio;
+    public GameObject xMusic;
+
     public UnityEvent onOpenMenu;
     public UnityEvent onCloseMenu;
 
@@ -29,6 +32,9 @@ public class PauseMenuCanvas : MonoBehaviour
         isOpen = false;
 
         content = transform.GetChild(0);
+
+        if(AudioMangerBoolean.audioIsMuted) xAudio.SetActive(true);
+        if(AudioMangerBoolean.musicIsMuted) xMusic.SetActive(true);
     }
 
     public void OpenCloseInput(InputAction.CallbackContext ctx)
@@ -53,6 +59,8 @@ public class PauseMenuCanvas : MonoBehaviour
     {
         obj.SetActive(!obj.activeSelf);
 
+        AudioMangerBoolean.audioIsMuted = obj.activeSelf;
+
         if (obj.activeSelf) audioM.SetFloat("sfx", MathF.Log10(0.0000001f) * 20);
         else audioM.SetFloat("sfx", MathF.Log10(1) * 20);
 
@@ -62,6 +70,8 @@ public class PauseMenuCanvas : MonoBehaviour
     {
         obj.SetActive(!obj.activeSelf);
 
+        AudioMangerBoolean.musicIsMuted = obj.activeSelf;
+
         if (obj.activeSelf) audioM.SetFloat("music", MathF.Log10(0.0000001f) * 20);
         else audioM.SetFloat("music", MathF.Log10(1) * 20);
     }
@@ -70,4 +80,10 @@ public class PauseMenuCanvas : MonoBehaviour
     {
         Application.Quit();
     }
+}
+
+public static class AudioMangerBoolean
+{
+    public static bool audioIsMuted;
+    public static bool musicIsMuted;
 }
