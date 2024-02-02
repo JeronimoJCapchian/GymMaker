@@ -29,6 +29,7 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6337505367991261292}
   m_RootOrder: 0
@@ -120,6 +121,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0.71427894, z: -0, w: -0.6998611}
   m_LocalPosition: {x: -271.281, y: 141.48, z: -131.094}
   m_LocalScale: {x: 2.04323, y: 2.04323, z: 2.04323}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6337505367758095047}
   m_Father: {fileID: 0}
@@ -151,6 +153,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canHighlight: 1
+  lookAtPivot: 1
   onInteract:
     m_PersistentCalls:
       m_Calls: []
@@ -184,6 +187,11 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  hideNavigatorOnToggle: 0
+  _PromptTextVar: show more
+  _AltPromptTextVar: hide info
+  _HidePromptOnInteract: 1
+  _AttenuateAudio: 0
 --- !u!82 &6337505366257363786
 AudioSource:
   m_ObjectHideFlags: 0
@@ -193,7 +201,7 @@ AudioSource:
   m_GameObject: {fileID: 6337505366257363790}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: -3389216487835622329, guid: a1378c37212f7aa45aae0172a4d5e8d3, type: 2}
+  OutputAudioMixerGroup: {fileID: 7288884621597183588, guid: 5cc9012614420474aae1dd7f046a3c1f, type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
@@ -308,6 +316,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -0.000000071166}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6337505367199147668}
   m_RootOrder: 1
@@ -382,6 +391,7 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6337505367199147668}
   m_Father: {fileID: 6337505367460922668}
@@ -432,6 +442,7 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6337505367277913984}
   - {fileID: 6337505366296763191}
@@ -510,6 +521,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6337505367199147668}
   m_RootOrder: 0
@@ -553,7 +565,7 @@ MonoBehaviour:
     February, 2001. Destiny is NASA''s first permanent operating orbital research
     station since Skylab was vacated in February 1974.
 
-    
+
 
     The Boeing Company
     began construction of the 14.5-tonne (32,000 lb) research laboratory in 1995
@@ -562,7 +574,7 @@ MonoBehaviour:
     in 1998, and was turned over to NASA for pre-launch preparations in August 2000.
     It launched on February 7, 2001 aboard the Space Shuttle Atlantis on STS-98.
 
-    
+
 
     Astronauts
     work inside the pressurized facility to conduct research in numerous scientific
@@ -595,7 +607,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 13.15
+  m_fontSize: 12.2
   m_fontSizeBase: 16
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -664,6 +676,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6337505366804355736}
   - {fileID: 6337505367991261292}
@@ -677,7 +690,7 @@ RectTransform:
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &6337505367460922669
 Animator:
-  serializedVersion: 3
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -690,10 +703,12 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &6337505367668506707
 GameObject:
   m_ObjectHideFlags: 0
@@ -722,6 +737,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 1.0914e-11}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6337505367199147668}
   m_RootOrder: 2
@@ -857,6 +873,7 @@ RectTransform:
   m_LocalRotation: {x: -0, y: 0.6998609, z: -0, w: 0.7142792}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.0034455836, y: 0.0034455836, z: 0.0034455836}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6337505367460922668}
   m_Father: {fileID: 6337505366257363784}
@@ -955,6 +972,7 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6337505365972187724}
   m_Father: {fileID: 6337505367460922668}
