@@ -15,10 +15,11 @@ public class StateManager : MonoBehaviour
     [SerializeField] UnityEvent onEditModeOn;
     [SerializeField] UnityEvent onEditModeOff;
 
-    List<BoxCollider> colliders =new List<BoxCollider>();
+    List<BoxCollider> colliders = new List<BoxCollider>();
 
-    private void Awake() {
-        if(Instance == null) Instance = this;
+    private void Awake()
+    {
+        if (Instance == null) Instance = this;
     }
 
     public void ChangeState()
@@ -26,8 +27,8 @@ public class StateManager : MonoBehaviour
         isViewportMode = !isViewportMode;
 
         changeState?.Invoke(isViewportMode);
-        
-        if(isViewportMode) onEditModeOff?.Invoke();
+
+        if (isViewportMode) onEditModeOff?.Invoke();
         else onEditModeOn?.Invoke();
     }
 
@@ -48,9 +49,12 @@ public class StateManager : MonoBehaviour
 
     public void EnableDisable(bool value)
     {
-        foreach (var item in colliders)
+        if (colliders.Count > 0)
         {
-            item.enabled = value;
+            foreach (var item in colliders)
+            {
+                if(item) item.enabled = value;
+            }
         }
     }
 }

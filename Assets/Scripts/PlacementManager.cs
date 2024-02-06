@@ -129,3 +129,7 @@ public class PlacementManager : MonoBehaviour
     }
 
 }
+
+public static class DisplayInfoData{
+    public static bool isOn = false;
+}

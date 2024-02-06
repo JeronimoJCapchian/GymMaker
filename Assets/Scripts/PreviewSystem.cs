@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Interactiva.Core.POIs;
 
 public class PreviewSystem : MonoBehaviour
 {
@@ -52,6 +53,7 @@ public class PreviewSystem : MonoBehaviour
     private void PreparePreview(GameObject previewObject)
     {
         Renderer[] renderers = previewObject.GetComponentsInChildren<Renderer>();
+        previewObject.GetComponentInChildren<POIDisplay3D>().gameObject.SetActive(false);
         foreach (Renderer renderer in renderers)
         {
             Material[] materials = renderer.materials;
@@ -99,7 +101,6 @@ public class PreviewSystem : MonoBehaviour
     {
         if (PreviewObject != null)
         {
-            Debug.Log(PreviewObject);
             pr = PreviewObject.GetComponent<TriggeringValidate>().validity;
         }
     }

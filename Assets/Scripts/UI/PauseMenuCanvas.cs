@@ -5,6 +5,9 @@ using UnityEngine;
 using UnityEngine.Audio;
 using UnityEngine.Events;
 using UnityEngine.InputSystem;
+using UnityEngine.UI;
+using Interactiva.Core.POIs;
+using System.Linq;
 
 public class PauseMenuCanvas : MonoBehaviour
 {
@@ -21,6 +24,8 @@ public class PauseMenuCanvas : MonoBehaviour
     public UnityEvent onCloseMenu;
 
     [SerializeField] AudioMixer audioM;
+
+    public Button btnInfo;
 
     private void Awake()
     {
@@ -79,6 +84,26 @@ public class PauseMenuCanvas : MonoBehaviour
     public void AppQuit()
     {
         Application.Quit();
+    }
+
+    public void OnClickInfoBtn()
+    {
+        DisplayInfoData.isOn = !DisplayInfoData.isOn;
+
+        btnInfo.transform.GetChild(0).gameObject.SetActive(!btnInfo.transform.GetChild(0).gameObject.activeSelf);
+
+        UpdateInfos();
+    }
+
+    public void UpdateInfos()
+    {
+        var infos = FindObjectsOfType<POIDisplay3D>(true).ToList();
+        if (infos.Count == 0) return;
+
+        foreach (var item in infos)
+        {
+            item.gameObject.SetActive(!btnInfo.transform.GetChild(0).gameObject.activeSelf);
+        }
     }
 }
 
